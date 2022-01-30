@@ -1,2 +1,1 @@
-My Dotfiles for	macOS
-# .dotfiles
+# My Dotfiles for	macOS
