@@ -73,7 +73,8 @@ ZSH_THEME="spaceship"
 plugins=(git
          extract         
          zsh-autosuggestions
-         zsh-syntax-highlighting)
+         zsh-syntax-highlighting
+		     colored-man-pages)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,49 +100,13 @@ export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/
 
 # Prevent Homebrew from gathering analytics
 export HOMEBREW_NO_ANALYTICS=1
+# Enable quarantining of Homebrew-Cask's downloads
+export HOMEBREW_CASK_OPTS=--no-quarantine
 
 # VS CODE
 code () {
   VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;
 }
-
-# Make less the default pager, add some options and enable syntax highlight using source-highlight
-[ -n "$LESSPIPE" ] && export LESSOPEN="| ${LESSPIPE} %s"
-less_options=(
-	# If the entire text fits on one screen, just show it and quit. (Be more
-	# like "cat" and less like "more".)
-	--quit-if-one-screen
-
-	# Do not clear the screen first.
-	--no-init
-
-	# Like "smartcase" in Vim: ignore case unless the search pattern is mixed.
-	--ignore-case
-
-	# Do not automatically wrap long lines.
-	--chop-long-lines
-
-	# Allow ANSI colour escapes, but no other escapes.
-	--RAW-CONTROL-CHARS
-
-	# Do not ring the bell when trying to scroll past the end of the buffer.
-	--quiet
-
-	# Do not complain when we are on a dumb terminal.
-	--dumb
-);
-
-export LESS="${less_options[*]}"
-export PAGER='less'
-
-# Colorized_manpages
-export LESS_TERMCAP_mb=$'\E[01;31m' # begin blinking
-export LESS_TERMCAP_md=$'\E[01;35m' # begin bold
-export LESS_TERMCAP_me=$'\E[0m' # end mode
-export LESS_TERMCAP_se=$'\E[0m' # end standout-mode
-export LESS_TERMCAP_so=$'\E[01;46;37m' # begin standout-mode - info box
-export LESS_TERMCAP_ue=$'\E[0m' # end underline
-export LESS_TERMCAP_us=$'\E[01;32m' # begin underline
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
