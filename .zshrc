@@ -1,6 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# https://docs.brew.sh/Shell-Completion
+FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -104,9 +107,9 @@ export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_CASK_OPTS=--no-quarantine
 
 # VS CODE
-code () {
-  VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;
-}
+#code () {
+#  VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;
+#}
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
