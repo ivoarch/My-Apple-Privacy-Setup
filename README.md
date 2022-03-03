@@ -213,7 +213,6 @@ defaults write com.apple.dock tilesize -int 50; killall Dock
   - Set Require Password to **immediately** from the drop down menu
   - Turn on FileVault 
   - Turn on Firewall
-  - Turn on FileVault
   - Don’t send search queries to Apple
 * **Storage**
   - Remove unused apps
