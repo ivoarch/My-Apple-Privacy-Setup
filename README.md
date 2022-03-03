@@ -149,71 +149,71 @@ brew install --cask \
 
 ## System Preferences
 
-- **Generel**
-Use dark menu bar and dock
+* **Generel**
+  - Use dark menu bar and dock
 Ask to keep changes when closing documents **on**
 Close windows when quitting an app **on**
-- **Dock**
-Remove unused apps add only favorites to Dock
-Show recent applications in Dock **off**
-Minimize windows into their application’s icon **on**
-Show indicators for open applications **on**
-Set dock size to 50
+* **Dock**
+  - Remove unused apps add only favorites to Dock
+  - Show recent applications in Dock **off**
+  - Minimize windows into their application’s icon **on**
+  - Show indicators for open applications **on**
+  - Set dock size to 50
 
 ```
 defaults write com.apple.dock tilesize -int 50; killall Dock
 
 ```
-- **Battery**
-Show Percentage **on**
-- **Display**
-Nightshift **on** 
-Schedule: Sunset to Sunrise
-- **Security**
-Setup Touch ID
-- **Notifications**
-**off**, except for App Store, Calendar, FaceTime, Mail, Messages, Reminder, Safari, Telegram
-- **Siri**
-Disable
-- **Trackpad**
-Tap to Click
-Speed up cursor
-- **Keyboard**
-Text
-disable "Add full stop with double-space"
-disable "Use smart quotes and dashes"
-use " for double quotes
-use ' for single quotes
-Sources
-Add Bulgarian lang
-- **Spotlight**
-Disable Spotlight except for Applications and System Preferences
-- **Mission Control**
-Hot Corners: disable all
-- **Finder**
-Sidebar:
-Activate all Favorites 
-Create custom Tags - Work, Personal, Important
-Show all Filename Extensions
-Remove Items from Bin after 30 Days
-Open new window in user $HOME directory
-Search in directory actual
-View:
-Show path bar
-Show status bar
-- **Sharing**
-"Change computer name"
-Also terminal:
-sudo scutil --set ComputerName "newname"
-sudo scutil --set LocalHostName "newname"
-sudo scutil --set HostName "newname"
-"Make sure only AirPlay file sharing is enabled"
-- **Security and Privacy**
-General:
-Set Require Password to **immediately** from the drop down menu
-Turn on FileVault
-Turn on Firewall
-Turn on FileVault
-Don’t send search queries to Apple
-- **Storage**
-Remove unused apps
+* **Battery**
+  - Show Percentage **on**
+* **Display**
+  - Nightshift **on** 
+  - Schedule: Sunset to Sunrise
+* **Security**
+  - Setup Touch ID
+* **Notifications**
+  - **off**, except for App Store, Calendar, FaceTime, Mail, Messages, Reminder, Safari, Telegram
+* **Siri**
+  - Disable
+* **Trackpad**
+  - Tap to Click
+  - Speed up cursor
+* **Keyboard**
+  - Text
+  - disable "Add full stop with double-space"
+  - disable "Use smart quotes and dashes"
+  - use " for double quotes
+  - use ' for single quotes
+  - Sources
+  - Add Bulgarian lang
+* **Spotlight**
+  - Disable Spotlight except for Applications and System Preferences
+* **Mission Control**
+  - Hot Corners: disable all
+* **Finder**
+  - Sidebar:
+  - Activate all Favorites 
+  - Create custom Tags - Work, Personal, Important
+  - Show all Filename Extensions
+  - Remove Items from Bin after 30 Days
+  - Open new window in user $HOME directory
+  - Search in directory actual
+  - View:
+  - Show path bar
+  - Show status bar
+* **Sharing**
+  - "Change computer name"
+  - Also terminal:
+  - sudo scutil --set ComputerName "newname"
+  - sudo scutil --set LocalHostName "newname"
+  - sudo scutil --set HostName "newname"
+  - "Make sure only AirPlay file sharing is enabled"
+* **Security and Privacy**
+  - General:
+  - Set Require Password to **immediately** from the drop down menu
+  - Turn on FileVault 
+  - Turn on Firewall
+  - Turn on FileVault
+  - Don’t send search queries to Apple
+* **Storage**
+  - Remove unused apps
