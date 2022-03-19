@@ -77,7 +77,7 @@ plugins=(git
          extract         
          zsh-autosuggestions
          zsh-syntax-highlighting
-		     colored-man-pages)
+	       colored-man-pages)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -105,11 +105,6 @@ export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/
 export HOMEBREW_NO_ANALYTICS=1
 # Enable quarantining of Homebrew-Cask's downloads
 export HOMEBREW_CASK_OPTS=--no-quarantine
-
-# VS CODE
-#code () {
-#  VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;
-#}
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -158,3 +153,14 @@ alias ack='nocorrect ack'
 alias cp="nocorrect cp"
 alias mcd="nocorrect mcd"
 alias rm="nocorrect rm"
+
+# Copy public key to clipboard:
+alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
+
+mc () {
+  # Create a new directory and enter it
+  mkdir -p "$@" && cd "$@"
+}
+
+# macOS Monterey’s Built-In Network Quality Test
+alias speedtest="networkQuality"
