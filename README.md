@@ -240,8 +240,7 @@ defaults write com.apple.dock tilesize -int 50; killall Dock
 
 ### Security tools
 
-* [AdGuard](https://adguard.com/es/welcome.html) - Adblocker
-* [1Password](https://1password.com/es/) - Password manager
+* [Bitwarden](https://bitwarden.com/) - Password manager
 * [Cryptomator](https://cryptomator.org) - Protect your data in the cloud
 * [Micro Snitch](https://www.obdev.at/products/-microsnitch/index.html) - A microphone & camera activity monitor
 * [Internet Access Policy Viewer](https://obdev.at/products/iapviewer/index.html) - A better view on privacy.
@@ -299,7 +298,7 @@ Run: `pbcopy < ls ~/.ssh/id_ed25519.pub` which copies the file into your clipboa
 * Set as default browser
 * Firefox Privacy – The Complete How-To Guide for 2022 click [here](https://restoreprivacy.com/firefox-privacy/)
 * Extensions
-  - [1Password](https://addons.mozilla.org/en-US/firefox/addon/1password-x-password-manager/)
+  - [Bitwarden](https://addons.mozilla.org/es/firefox/addon/bitwarden-password-manager/)
   - [Ublock origin](https://ublockorigin.com/) 
   - [StartPage](https://addons.mozilla.org/es/firefox/addon/startpage-private-search/?src=external-marketing-pages)
   - [I don't care about cookies](https://addons.mozilla.org/es/firefox/addon/i-dont-care-about-cookies/)
