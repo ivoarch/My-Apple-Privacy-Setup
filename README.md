@@ -3,13 +3,18 @@
 WORK IN PROGRESS !!
 
 
-## Setup HomeBrew
+## Xcode and cli tools
 
-### Install Command Line Tools
+```
+/usr/sbin/softwareupdate --install-rosetta --agree-to-license
+```
 
 ```
 xcode-select --install
 ```
+
+## Setup HomeBrew
+
 ### Install HomeBrew
 
 ```
@@ -87,12 +92,22 @@ Select the **Dracula** from **Color Presets**...
 
 ## Development Environment
 
+### Android Dev
+
+* [Android file transfer](https://www.android.com/filetransfer/) 
+
 ### Python
 
 - [Miniforge](https://github.com/conda-forge/miniforge) arm64 (Apple Silicon)
 
 ```
 ./Miniforge3-MacOSX-arm64.sh
+```
+
+### Java/JDK
+
+```
+brew install openjdk
 ```
 
 ## Development tools
@@ -112,39 +127,47 @@ Select the **Dracula** from **Color Presets**...
 * [Git](https://git-scm.com) - Version control system  
 * [UTM](https://mac.getutm.app) - Virtual Machines
 
-## Security tools
-
-* [AdGuard](https://adguard.com/es/welcome.html) - Adblocker
-* [Bitwarden](https://bitwarden.com) - Open source Password manager
-* [Micro Snitch](https://www.obdev.at/products/-microsnitch/index.html) - A microphone & camera activity monitor
-* [Internet Access Policy Viewer](https://obdev.at/products/iapviewer/index.html) - A better view on privacy.
-
-```
-brew install --cask \
-  bitwarden \
-  micro-snitch 
-```
-
 ## Office & Productivity Tools
 
 * [Microsoft Office 365](https://www.office.com) - Microsoft office package
  
+## Cli Tools
+
+```
+brew install \
+  bat \
+  coreutils \
+  tree \
+  htop \
+  exa \
+  youtube-dl \
+  neofetch \
+  imagemagick
+```
 
 ## Other software i use
- 
-* [Rectangle](https://rectangleapp.com) - Move and resize windows in macOS using keyboard shortcuts or snap areas
-* [Maccy](https://maccy.app) - Clipboard manager
+
+* [Appcleaner](https://freemacsoft.net/appcleaner/) - Application which allows you to thoroughly uninstall unwanted apps.
+* [Amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704?mt=12) - For keeping your Mac awake
+* [Rectangle](https://rectangleapp.com) - Move and resize windows in macOS using keyboard shortcuts  .
+* [Maccy](https://maccy.app) - Clipboard manager .
 * [Keka](https://www.keka.io/es/) - The macOS file archiver.
-* [DeepL](https://www.deepl.com/translator) - Translator
-* [Telegram](https://telegram.org) - Chat
+* [DeepL](https://www.deepl.com/translator) - Translator .
+* [Telegram](https://telegram.org) - Chat .
+* [Hiddenbar](https://github.com/dwarvesf/hidden) - Hide menu bar items to give your Mac a cleaner look.
+* [Tutanota](https://tutanota.com/es/) - is an end-to-end encrypted email software and freemium hosted secure email service
 
 ```
 brew install --cask \
+  appcleaner \
   rectangle \
   maccy \
   keka \
   telegram \
-  deepl
+  deepl \
+  hiddenbar \
+  tutanota
+
 ```
 
 ## System Preferences
@@ -208,11 +231,75 @@ defaults write com.apple.dock tilesize -int 50; killall Dock
   - sudo scutil --set LocalHostName "newname"
   - sudo scutil --set HostName "newname"
   - "Make sure only AirPlay file sharing is enabled"
-* **Security and Privacy**
-  - General:
-  - Set Require Password to **immediately** from the drop down menu
-  - Turn on FileVault 
-  - Turn on Firewall
   - Don’t send search queries to Apple
 * **Storage**
   - Remove unused apps
+
+
+## Security and Privacy settings
+
+### Security tools
+
+* [AdGuard](https://adguard.com/es/welcome.html) - Adblocker
+* [1Password](https://1password.com/es/) - Password manager
+* [Cryptomator](https://cryptomator.org) - Protect your data in the cloud
+* [Micro Snitch](https://www.obdev.at/products/-microsnitch/index.html) - A microphone & camera activity monitor
+* [Internet Access Policy Viewer](https://obdev.at/products/iapviewer/index.html) - A better view on privacy.
+
+```
+brew install --cask \
+  bitwarden \
+  micro-snitch \
+  cryptomator
+```
+
+### Automate MacOS Updates
+
+* Apple menu () > System Preferences > then click Software Updates > Check the tick boxes of “Automatically check for updates” & “Install App updates”
+
+### Disk Encryption
+
+* Apple menu () > System Preferences > then click Security & Privacy > FileVault > Turn ON FileVault
+### Firewall
+
+* Apple menu () > System Preferences > then click Security & Privacy > Firewall > Turn ON Firewall
+* Uncheck 'Automatically allow signed software to receive incoming connections'.
+
+### Enabling the Lock Screen
+
+* Apple menu () > System Preferences > then click Security & Privacy > General > Set Require Password to immediately 
+
+### Set default Privacy & Security settings
+
+* Apple menu () > System Preferences > then click Security & Privacy
+
+### More Mail privacy (iCloud+ only)
+
+* Apple menu () > System Preferences > Apple ID > iCloud > Hide My Email
+
+### Setup SSH
+
+* Create ssh key by following the steps:
+
+Run in terminal app
+
+```
+ssh-keygen -t ed25519 -C "<your email>"
+```
+
+* Press Return when asked **"Enter file in which to save the key"**
+* Press Return when asked **"Enter passphrase"** and **"Enter same passphrase again"**
+
+By default both private and public keys will be located in your `$HOME/.ssh` directory.
+
+Run: `pbcopy < ls ~/.ssh/id_ed25519.pub` which copies the file into your clipboard .
+
+### Setup Firefox
+
+* Set as default browser
+* Firefox Privacy – The Complete How-To Guide for 2022 click [here](https://restoreprivacy.com/firefox-privacy/)
+* Extensions
+  - [1Password](https://addons.mozilla.org/en-US/firefox/addon/1password-x-password-manager/)
+  - [Ublock origin](https://ublockorigin.com/) 
+  - [StartPage](https://addons.mozilla.org/es/firefox/addon/startpage-private-search/?src=external-marketing-pages)
+  - [I don't care about cookies](https://addons.mozilla.org/es/firefox/addon/i-dont-care-about-cookies/)
