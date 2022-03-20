@@ -303,3 +303,8 @@ Run: `pbcopy < ls ~/.ssh/id_ed25519.pub` which copies the file into your clipboa
   - [Ublock origin](https://ublockorigin.com/) 
   - [StartPage](https://addons.mozilla.org/es/firefox/addon/startpage-private-search/?src=external-marketing-pages)
   - [I don't care about cookies](https://addons.mozilla.org/es/firefox/addon/i-dont-care-about-cookies/)
+
+## Install Mullvad VPN
+
+* [Download](https://mullvad.net/download/) the latest version of the app from our website.
+* Instruction to install click [here](https://mullvad.net/es/help/install-and-use-mullvad-app-macos/) .
