@@ -244,6 +244,7 @@ defaults write com.apple.dock tilesize -int 50; killall Dock
 * [Cryptomator](https://cryptomator.org) - Protect your data in the cloud
 * [Micro Snitch](https://www.obdev.at/products/-microsnitch/index.html) - A microphone & camera activity monitor
 * [Internet Access Policy Viewer](https://obdev.at/products/iapviewer/index.html) - A better view on privacy.
+* [Mullvad](https://mullvad.net) - Open-source commercial VPN service based in Sweden. 
 
 ```
 brew install --cask \
