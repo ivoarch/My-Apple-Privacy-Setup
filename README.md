@@ -2,8 +2,60 @@
 
 WORK IN PROGRESS !!
 
+# 1 Setting up computer name
 
-## Xcode and cli tools
+Setting up computer name, hostname
+
+```
+sudo scutil --set ComputerName "newname"
+sudo scutil --set LocalHostName "newname"
+sudo scutil --set HostName "newname"
+```
+
+Flush the DNS cache by typing:
+
+```
+dscacheutil -flushcache
+```
+
+# 2 Setting up username
+
+- Setup administrator account (don´t name Admin! use other name) .
+- Create a second standart account (regulate user for every day tasks) . Name this account Admin .
+
+# 3 Security and Privacy settings
+
+### Automate MacOS Updates
+
+* Apple menu () > System Preferences > then click Software Updates > Check the tick boxes of “Automatically check for updates” & “Install App updates”
+
+### Setup Touch ID and add fingerprints  
+
+* Apple menu () > System Preferences > then click Touch ID
+
+### Disk Encryption
+
+* Apple menu () > System Preferences > then click Security & Privacy > FileVault > Turn ON FileVault
+### Firewall
+
+* Apple menu () > System Preferences > then click Security & Privacy > Firewall > Turn ON Firewall
+* Uncheck 'Automatically allow signed software to receive incoming connections'.
+
+### Enabling the Lock Screen
+
+* Apple menu () > System Preferences > then click Security & Privacy > General > Set Require Password to immediately 
+
+### Set default privacy settings for apps
+
+* Apple menu () > System Preferences > then click Security & Privacy > Privacy 
+
+### More Mail privacy (iCloud+ only)
+
+* Apple menu () > System Preferences > Apple ID > iCloud > Hide My Email
+
+# 4 Install Software
+
+## 4.1 Xcode and cli tools
 
 ```
 /usr/sbin/softwareupdate --install-rosetta --agree-to-license
@@ -13,9 +65,7 @@ WORK IN PROGRESS !!
 xcode-select --install
 ```
 
-## Setup HomeBrew
-
-### Install HomeBrew
+## 4.2 Install HomeBrew
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -32,14 +82,16 @@ For installing the packages using Intel, you can now use:
 ```
 arch -x86_64 brew install foo
 ```
-## Terminal setup
+
+## Terminal Setup
+
 - Terminal [Iterm2](https://iterm2.com)
 - ZSH + [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
 - Terminal Prompt [Spaceship](https://github.com/spaceship-prompt/spaceship-prompt) 
 - Font [Fira Code](https://github.com/tonsky/FiraCode)
 - Color theme [Dracula](https://draculatheme.com/iterm)
 
-### Install iterm2
+### Install Iterm2
 
 ```
 brew install --cask iterm2
@@ -90,6 +142,45 @@ Select **Import...** from the list
 Select the **Dracula.itermcolors** file
 Select the **Dracula** from **Color Presets**...
 
+## Browser setup
+
+* Browser Firefox 
+* Set as default browser
+* Firefox Privacy – The Complete How-To Guide for 2022 click [here](https://restoreprivacy.com/firefox-privacy/)
+* Extensions
+  - [Bitwarden](https://addons.mozilla.org/es/firefox/addon/bitwarden-password-manager/)
+  - [Ublock origin](https://ublockorigin.com/) 
+  - [StartPage](https://addons.mozilla.org/es/firefox/addon/startpage-private-search/?src=external-marketing-pages)
+  - [I don't care about cookies](https://addons.mozilla.org/es/firefox/addon/i-dont-care-about-cookies/)
+
+### Install firefox
+
+```
+brew install --cask firefox
+```
+
+## VPN Setup
+### Install Mullvad VPN
+
+* [Download](https://mullvad.net/download/) the latest version of the app from our website.
+* Instruction to install click [here](https://mullvad.net/es/help/install-and-use-mullvad-app-macos/) .
+
+### Setup SSH
+
+* Create ssh key by following the steps:
+
+Run in terminal app
+
+```
+ssh-keygen -t ed25519 -C "<your email>"
+```
+
+* Press Return when asked **"Enter file in which to save the key"**
+* Press Return when asked **"Enter passphrase"** and **"Enter same passphrase again"**
+
+By default both private and public keys will be located in your `$HOME/.ssh` directory.
+
+Run: `pbcopy < ls ~/.ssh/id_ed25519.pub` which copies the file into your clipboard .
 ## Development Environment
 
 ### Android Dev
@@ -170,7 +261,21 @@ brew install --cask \
 
 ```
 
-## System Preferences
+## Security tools
+
+* [Bitwarden](https://bitwarden.com/) - Password manager
+* [Cryptomator](https://cryptomator.org) - Protect your data in the cloud
+* [Micro Snitch](https://www.obdev.at/products/-microsnitch/index.html) - A microphone & camera activity monitor
+* [Internet Access Policy Viewer](https://obdev.at/products/iapviewer/index.html) - A better view on privacy.
+* [Mullvad](https://mullvad.net) - Open-source commercial VPN service based in Sweden. 
+
+```
+brew install --cask \
+  bitwarden \
+  micro-snitch \
+  cryptomator
+```
+# 5 System Preferences
 
 * **Generel**
   - Use dark menu bar and dock
@@ -225,86 +330,6 @@ defaults write com.apple.dock tilesize -int 50; killall Dock
   - Show path bar
   - Show status bar
 * **Sharing**
-  - "Change computer name"
-  - Also terminal:
-  - sudo scutil --set ComputerName "newname"
-  - sudo scutil --set LocalHostName "newname"
-  - sudo scutil --set HostName "newname"
-  - "Make sure only AirPlay file sharing is enabled"
-  - Don’t send search queries to Apple
+  - Make sure only you want for sharing is enabled
 * **Storage**
   - Remove unused apps
-
-
-## Security and Privacy settings
-
-### Security tools
-
-* [Bitwarden](https://bitwarden.com/) - Password manager
-* [Cryptomator](https://cryptomator.org) - Protect your data in the cloud
-* [Micro Snitch](https://www.obdev.at/products/-microsnitch/index.html) - A microphone & camera activity monitor
-* [Internet Access Policy Viewer](https://obdev.at/products/iapviewer/index.html) - A better view on privacy.
-* [Mullvad](https://mullvad.net) - Open-source commercial VPN service based in Sweden. 
-
-```
-brew install --cask \
-  bitwarden \
-  micro-snitch \
-  cryptomator
-```
-
-### Automate MacOS Updates
-
-* Apple menu () > System Preferences > then click Software Updates > Check the tick boxes of “Automatically check for updates” & “Install App updates”
-
-### Disk Encryption
-
-* Apple menu () > System Preferences > then click Security & Privacy > FileVault > Turn ON FileVault
-### Firewall
-
-* Apple menu () > System Preferences > then click Security & Privacy > Firewall > Turn ON Firewall
-* Uncheck 'Automatically allow signed software to receive incoming connections'.
-
-### Enabling the Lock Screen
-
-* Apple menu () > System Preferences > then click Security & Privacy > General > Set Require Password to immediately 
-
-### Set default Privacy & Security settings
-
-* Apple menu () > System Preferences > then click Security & Privacy
-
-### More Mail privacy (iCloud+ only)
-
-* Apple menu () > System Preferences > Apple ID > iCloud > Hide My Email
-
-### Setup SSH
-
-* Create ssh key by following the steps:
-
-Run in terminal app
-
-```
-ssh-keygen -t ed25519 -C "<your email>"
-```
-
-* Press Return when asked **"Enter file in which to save the key"**
-* Press Return when asked **"Enter passphrase"** and **"Enter same passphrase again"**
-
-By default both private and public keys will be located in your `$HOME/.ssh` directory.
-
-Run: `pbcopy < ls ~/.ssh/id_ed25519.pub` which copies the file into your clipboard .
-
-### Setup Firefox
-
-* Set as default browser
-* Firefox Privacy – The Complete How-To Guide for 2022 click [here](https://restoreprivacy.com/firefox-privacy/)
-* Extensions
-  - [Bitwarden](https://addons.mozilla.org/es/firefox/addon/bitwarden-password-manager/)
-  - [Ublock origin](https://ublockorigin.com/) 
-  - [StartPage](https://addons.mozilla.org/es/firefox/addon/startpage-private-search/?src=external-marketing-pages)
-  - [I don't care about cookies](https://addons.mozilla.org/es/firefox/addon/i-dont-care-about-cookies/)
-
-## Install Mullvad VPN
-
-* [Download](https://mullvad.net/download/) the latest version of the app from our website.
-* Instruction to install click [here](https://mullvad.net/es/help/install-and-use-mullvad-app-macos/) .
