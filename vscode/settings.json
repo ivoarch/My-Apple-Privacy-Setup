@@ -1,0 +1,17 @@
+{
+  "workbench.colorTheme": "Dracula Soft",
+
+  "editor.fontSize": 14,
+  "editor.fontLigatures": "'ss02', 'ss03', 'cv16', 'cv29'",
+  "editor.fontFamily": "Fira Code",
+
+  "editor.accessibilitySupport": "off",
+  "editor.minimap.enabled": false,
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on"
+}
