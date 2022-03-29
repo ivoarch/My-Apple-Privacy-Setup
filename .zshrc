@@ -100,12 +100,15 @@ export LC_ALL="es_ES.UTF-8"
 # export ARCHFLAGS="-arch x86_64"
 
 export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/Users/ivo/bin"
+# openjdk
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 # Prevent Homebrew from gathering analytics
 export HOMEBREW_NO_ANALYTICS=1
 # Enable quarantining of Homebrew-Cask's downloads
 export HOMEBREW_CASK_OPTS=--no-quarantine
-
+# For Sectrive
+export SSH_AUTH_SOCK=/Users/ivo/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.

@@ -1,8 +1,8 @@
 # My macOS M1 Setup Guide
 
-WORK IN PROGRESS !!
+WORK IN PROGRESS
 
-# 1 Setting up computer name
+# 1 Setting up computer name
 
 Setting up computer name, hostname
 
@@ -27,31 +27,32 @@ dscacheutil -flushcache
 
 ### Automate MacOS Updates
 
-* Apple menu () > System Preferences > then click Software Updates > Check the tick boxes of “Automatically check for updates” & “Install App updates”
+- Apple menu () > System Preferences > then click Software Updates > Check the tick boxes of “Automatically check for updates” & “Install App updates”
 
-### Setup Touch ID and add fingerprints  
+### Setup Touch ID and add fingerprints
 
-* Apple menu () > System Preferences > then click Touch ID
+- Apple menu () > System Preferences > then click Touch ID
 
 ### Disk Encryption
 
-* Apple menu () > System Preferences > then click Security & Privacy > FileVault > Turn ON FileVault
+- Apple menu () > System Preferences > then click Security & Privacy > FileVault > Turn ON FileVault
+
 ### Firewall
 
-* Apple menu () > System Preferences > then click Security & Privacy > Firewall > Turn ON Firewall
-* Uncheck 'Automatically allow signed software to receive incoming connections'.
+- Apple menu () > System Preferences > then click Security & Privacy > Firewall > Turn ON Firewall
+- Uncheck 'Automatically allow signed software to receive incoming connections'.
 
 ### Enabling the Lock Screen
 
-* Apple menu () > System Preferences > then click Security & Privacy > General > Set Require Password to immediately 
+- Apple menu () > System Preferences > then click Security & Privacy > General > Set Require Password to immediately
 
 ### Set default privacy settings for apps
 
-* Apple menu () > System Preferences > then click Security & Privacy > Privacy 
+- Apple menu () > System Preferences > then click Security & Privacy > Privacy
 
 ### More Mail privacy (iCloud+ only)
 
-* Apple menu () > System Preferences > Apple ID > iCloud > Hide My Email
+- Apple menu () > System Preferences > Apple ID > iCloud > Hide My Email
 
 # 4 Install Software
 
@@ -70,7 +71,8 @@ xcode-select --install
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-#### For X86_64 packages 
+
+#### For X86_64 packages
 
 ```
 arch -x86_64 zsh
@@ -78,7 +80,7 @@ arch -x86_64 zsh
 ```
 
 For installing the packages using Intel, you can now use:
- 
+
 ```
 arch -x86_64 brew install foo
 ```
@@ -87,7 +89,7 @@ arch -x86_64 brew install foo
 
 - Terminal [Iterm2](https://iterm2.com)
 - ZSH + [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
-- Terminal Prompt [Spaceship](https://github.com/spaceship-prompt/spaceship-prompt) 
+- Terminal Prompt [Spaceship](https://github.com/spaceship-prompt/spaceship-prompt)
 - Font [Fira Code](https://github.com/tonsky/FiraCode)
 - Color theme [Dracula](https://draculatheme.com/iterm)
 
@@ -112,14 +114,14 @@ plugins=(zsh-autosuggestions
          zsh-syntax-highlighting)
 ```
 
-### Install Spaceship prompt 
+### Install Spaceship prompt
 
 ```
 git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 ```
 
-Set ```ZSH_THEME="spaceship"``` in your `.zshrc` config file.
+Set `ZSH_THEME="spaceship"` in your `.zshrc` config file.
 
 ### Install Fira fonts
 
@@ -129,7 +131,7 @@ In the [downloaded TTF folder](https://github.com/tonsky/FiraCode/releases):
 1. Right click and select `Open` (alternatively `Open With Font Book`)
 1. Select "Install Font"
 
-### Dracula theme 
+### Dracula theme
 
 ```
 git clone https://github.com/dracula/iterm.git
@@ -144,12 +146,11 @@ Select the **Dracula** from **Color Presets**...
 
 ## Browser setup
 
-* Browser Firefox 
-* Set as default browser
-* Firefox Privacy – The Complete How-To Guide for 2022 click [here](https://restoreprivacy.com/firefox-privacy/)
-* Extensions
+- Browser Firefox
+- Firefox Privacy – The Complete How-To Guide for 2022 click [here](https://restoreprivacy.com/firefox-privacy/)
+- Extensions
   - [Bitwarden](https://addons.mozilla.org/es/firefox/addon/bitwarden-password-manager/)
-  - [Ublock origin](https://ublockorigin.com/) 
+  - [Ublock origin](https://ublockorigin.com/)
   - [StartPage](https://addons.mozilla.org/es/firefox/addon/startpage-private-search/?src=external-marketing-pages)
   - [I don't care about cookies](https://addons.mozilla.org/es/firefox/addon/i-dont-care-about-cookies/)
 
@@ -160,14 +161,15 @@ brew install --cask firefox
 ```
 
 ## VPN Setup
+
 ### Install Mullvad VPN
 
-* [Download](https://mullvad.net/download/) the latest version of the app from our website.
-* Instruction to install click [here](https://mullvad.net/es/help/install-and-use-mullvad-app-macos/) .
+- [Download](https://mullvad.net/download/) the latest version of the app from our website.
+- Instruction to install click [here](https://mullvad.net/es/help/install-and-use-mullvad-app-macos/) .
 
 ### Setup SSH
 
-* Create ssh key by following the steps:
+- Create ssh key by following the steps:
 
 Run in terminal app
 
@@ -175,17 +177,18 @@ Run in terminal app
 ssh-keygen -t ed25519 -C "<your email>"
 ```
 
-* Press Return when asked **"Enter file in which to save the key"**
-* Press Return when asked **"Enter passphrase"** and **"Enter same passphrase again"**
+- Press Return when asked **"Enter file in which to save the key"**
+- Press Return when asked **"Enter passphrase"** and **"Enter same passphrase again"**
 
 By default both private and public keys will be located in your `$HOME/.ssh` directory.
 
 Run: `pbcopy < ls ~/.ssh/id_ed25519.pub` which copies the file into your clipboard .
+
 ## Development Environment
 
 ### Android Dev
 
-* [Android file transfer](https://www.android.com/filetransfer/) 
+- [Android file transfer](https://www.android.com/filetransfer/)
 
 ### Python
 
@@ -202,8 +205,9 @@ brew install openjdk
 ```
 
 ## Development tools
-* [Docker](https://www.docker.com) - 
-* [Visual studio Code](https://code.visualstudio.com) - Default editor
+
+- [Docker](https://www.docker.com) -
+- [Visual studio Code](https://code.visualstudio.com) - Default editor
   - Extensions
   - [Colorize](https://marketplace.visualstudio.com/items?itemName=kamikillerto.vscode-colorize)
   - [Docker](https://marketplace.visualstudio.com/itemsitemName=ms-azuretools.vscode-docker)
@@ -215,13 +219,13 @@ brew install openjdk
   - [Dracula theme](https://marketplace.visualstudio.com/items?itemName=dracula-theme.dracula)
   - [Markdown preview enhanced]()
   - [Material Icon theme]()
-* [Git](https://git-scm.com) - Version control system  
-* [UTM](https://mac.getutm.app) - Virtual Machines
+- [Git](https://git-scm.com) - Version control system
+- [UTM](https://mac.getutm.app) - Virtual Machines
 
 ## Office & Productivity Tools
 
-* [Microsoft Office 365](https://www.office.com) - Microsoft office package
- 
+- [Microsoft Office 365](https://www.office.com) - Microsoft office package
+
 ## Cli Tools
 
 ```
@@ -238,15 +242,15 @@ brew install \
 
 ## Other software i use
 
-* [Appcleaner](https://freemacsoft.net/appcleaner/) - Application which allows you to thoroughly uninstall unwanted apps.
-* [Amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704?mt=12) - For keeping your Mac awake
-* [Rectangle](https://rectangleapp.com) - Move and resize windows in macOS using keyboard shortcuts  .
-* [Maccy](https://maccy.app) - Clipboard manager .
-* [Keka](https://www.keka.io/es/) - The macOS file archiver.
-* [DeepL](https://www.deepl.com/translator) - Translator .
-* [Telegram](https://telegram.org) - Chat .
-* [Hiddenbar](https://github.com/dwarvesf/hidden) - Hide menu bar items to give your Mac a cleaner look.
-* [Tutanota](https://tutanota.com/es/) - is an end-to-end encrypted email software and freemium hosted secure email service
+- [Appcleaner](https://freemacsoft.net/appcleaner/) - Application which allows you to thoroughly uninstall unwanted apps.
+- [Amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704?mt=12) - For keeping your Mac awake
+- [Rectangle](https://rectangleapp.com) - Move and resize windows in macOS using keyboard shortcuts .
+- [Maccy](https://maccy.app) - Clipboard manager .
+- [Keka](https://www.keka.io/es/) - The macOS file archiver.
+- [DeepL](https://www.deepl.com/translator) - Translator .
+- [Telegram](https://telegram.org) - Chat .
+- [Hiddenbar](https://github.com/dwarvesf/hidden) - Hide menu bar items to give your Mac a cleaner look.
+- [Tutanota](https://tutanota.com/es/) - is an end-to-end encrypted email software and freemium hosted secure email service
 
 ```
 brew install --cask \
@@ -263,25 +267,28 @@ brew install --cask \
 
 ## Security tools
 
-* [Bitwarden](https://bitwarden.com/) - Password manager
-* [Cryptomator](https://cryptomator.org) - Protect your data in the cloud
-* [Micro Snitch](https://www.obdev.at/products/-microsnitch/index.html) - A microphone & camera activity monitor
-* [Internet Access Policy Viewer](https://obdev.at/products/iapviewer/index.html) - A better view on privacy.
-* [Mullvad](https://mullvad.net) - Open-source commercial VPN service based in Sweden. 
+- [Bitwarden](https://bitwarden.com/) - Open Source password manager .
+- [Cryptomator](https://cryptomator.org) - Protect your data in the cloud .
+- [Micro Snitch](https://www.obdev.at/products/-microsnitch/index.html) - A microphone & camera activity monitor .
+- [Internet Access Policy Viewer](https://obdev.at/products/iapviewer/index.html) - A better view on privacy.
+- [Mullvad](https://mullvad.net) - Open-source commercial VPN service based in Sweden.
+- [Secretive](https://github.com/maxgoedjen/secretive) - is an app for storing and managing SSH keys in the Secure Enclave .
 
 ```
 brew install --cask \
   bitwarden \
   micro-snitch \
-  cryptomator
+  cryptomator \
+  secretive
 ```
+
 # 5 System Preferences
 
-* **Generel**
+- **Generel**
   - Use dark menu bar and dock
-Ask to keep changes when closing documents **on**
-Close windows when quitting an app **on**
-* **Dock**
+    Ask to keep changes when closing documents **on**
+    Close windows when quitting an app **on**
+- **Dock**
   - Remove unused apps add only favorites to Dock
   - Show recent applications in Dock **off**
   - Minimize windows into their application’s icon **on**
@@ -292,21 +299,22 @@ Close windows when quitting an app **on**
 defaults write com.apple.dock tilesize -int 50; killall Dock
 
 ```
-* **Battery**
+
+- **Battery**
   - Show Percentage **on**
-* **Display**
-  - Nightshift **on** 
+- **Display**
+  - Nightshift **on**
   - Schedule: Sunset to Sunrise
-* **Security**
+- **Security**
   - Setup Touch ID
-* **Notifications**
+- **Notifications**
   - **off**, except for App Store, Calendar, FaceTime, Mail, Messages, Reminder, Safari, Telegram
-* **Siri**
+- **Siri**
   - Disable
-* **Trackpad**
+- **Trackpad**
   - Tap to Click
   - Speed up cursor
-* **Keyboard**
+- **Keyboard**
   - Text
   - disable "Add full stop with double-space"
   - disable "Use smart quotes and dashes"
@@ -314,13 +322,13 @@ defaults write com.apple.dock tilesize -int 50; killall Dock
   - use ' for single quotes
   - Sources
   - Add Bulgarian lang
-* **Spotlight**
+- **Spotlight**
   - Disable Spotlight except for Applications and System Preferences
-* **Mission Control**
+- **Mission Control**
   - Hot Corners: disable all
-* **Finder**
+- **Finder**
   - Sidebar:
-  - Activate all Favorites 
+  - Activate all Favorites
   - Create custom Tags - Work, Personal, Important
   - Show all Filename Extensions
   - Remove Items from Bin after 30 Days
@@ -329,7 +337,7 @@ defaults write com.apple.dock tilesize -int 50; killall Dock
   - View:
   - Show path bar
   - Show status bar
-* **Sharing**
+- **Sharing**
   - Make sure only you want for sharing is enabled
-* **Storage**
+- **Storage**
   - Remove unused apps
