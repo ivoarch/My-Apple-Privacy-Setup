@@ -1,8 +1,6 @@
-# My macOS M1 Setup Guide
+# My macOS (M1 chip) Setup Guide
 
-WORK IN PROGRESS
-
-# 1 Setting up computer name
+# 1) Setting up computer name
 
 Setting up computer name, hostname
 
@@ -18,45 +16,9 @@ Flush the DNS cache by typing:
 dscacheutil -flushcache
 ```
 
-# 2 Setting up username
+# 2) Install Software
 
-- Setup administrator account (don´t name Admin! use other name) .
-- Create a second standart account (regulate user for every day tasks) . Name this account Admin .
-
-# 3 Security and Privacy settings
-
-### Automate MacOS Updates
-
-- Apple menu () > System Preferences > then click Software Updates > Check the tick boxes of “Automatically check for updates” & “Install App updates”
-
-### Setup Touch ID and add fingerprints
-
-- Apple menu () > System Preferences > then click Touch ID
-
-### Disk Encryption
-
-- Apple menu () > System Preferences > then click Security & Privacy > FileVault > Turn ON FileVault
-
-### Firewall
-
-- Apple menu () > System Preferences > then click Security & Privacy > Firewall > Turn ON Firewall
-- Uncheck 'Automatically allow signed software to receive incoming connections'.
-
-### Enabling the Lock Screen
-
-- Apple menu () > System Preferences > then click Security & Privacy > General > Set Require Password to immediately
-
-### Set default privacy settings for apps
-
-- Apple menu () > System Preferences > then click Security & Privacy > Privacy
-
-### More Mail privacy (iCloud+ only)
-
-- Apple menu () > System Preferences > Apple ID > iCloud > Hide My Email
-
-# 4 Install Software
-
-## 4.1 Xcode and cli tools
+## 2.1) Xcode and cli tools
 
 ```
 /usr/sbin/softwareupdate --install-rosetta --agree-to-license
@@ -66,7 +28,7 @@ dscacheutil -flushcache
 xcode-select --install
 ```
 
-## 4.2 Install HomeBrew
+## 2.2) Install HomeBrew 🍻
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -143,22 +105,6 @@ Open the **Color Presets...** drop-down in the bottom right corner
 Select **Import...** from the list
 Select the **Dracula.itermcolors** file
 Select the **Dracula** from **Color Presets**...
-
-## Browser setup
-
-- Browser Firefox
-- Firefox Privacy – The Complete How-To Guide for 2022 click [here](https://restoreprivacy.com/firefox-privacy/)
-- Extensions
-  - [Bitwarden](https://addons.mozilla.org/es/firefox/addon/bitwarden-password-manager/)
-  - [Ublock origin](https://ublockorigin.com/)
-  - [StartPage](https://addons.mozilla.org/es/firefox/addon/startpage-private-search/?src=external-marketing-pages)
-  - [I don't care about cookies](https://addons.mozilla.org/es/firefox/addon/i-dont-care-about-cookies/)
-
-### Install firefox
-
-```
-brew install --cask firefox
-```
 
 ## VPN Setup
 
@@ -282,62 +228,115 @@ brew install --cask \
   secretive
 ```
 
-# 5 System Preferences
+# 3) System Preferences
 
 - **Generel**
   - Use dark menu bar and dock
-    Ask to keep changes when closing documents **on**
-    Close windows when quitting an app **on**
+  - Turn ✅ "Ask to keep changes when closing documents"
+  - Turn ✅ "Close windows when quitting an app"
 - **Dock**
   - Remove unused apps add only favorites to Dock
-  - Show recent applications in Dock **off**
-  - Minimize windows into their application’s icon **on**
-  - Show indicators for open applications **on**
-  - Set dock size to 50
-
-```
-defaults write com.apple.dock tilesize -int 50; killall Dock
-
-```
-
+  - Turn ❌ "Show recent applications in Dock"
+  - Turn ✅ "Minimize windows into their application’s icon"
+  - Turn ✅ "Show indicators for open applications"
+  - Set dock size to "50"
+  - `$ defaults write com.apple.dock tilesize -int 50; killall Dock`
+- **Accessibility**
+  - Turn ✅ "Three finger drag"
+  - Turn ✅ "Use scroll gesture with modifier keys to zoom"
 - **Battery**
-  - Show Percentage **on**
+  - Turn ✅ "Baterry Show Percentage"
 - **Display**
-  - Nightshift **on**
-  - Schedule: Sunset to Sunrise
-- **Security**
-  - Setup Touch ID
+  - Turn ✅ "Nightshift"
+  - Schedule "Sunset to Sunrise"
+- **Touch ID**
+  - Setup for everything
+- **Software Updates**
+  - Turn ✅ "Automatically check for updates"
+  - Install updates
+- **Users and Groups**
+  - Setup administrator account (don´t name Admin! use other name) .
+  - Create a second standart account (regulate user for every day tasks) . Name this account Admin .
 - **Notifications**
-  - **off**, except for App Store, Calendar, FaceTime, Mail, Messages, Reminder, Safari, Telegram
+  - Turn ❌, "Except for App Store, Calendar, FaceTime, Mail, Messages, Reminder, Safari, Telegram"
 - **Siri**
   - Disable
 - **Trackpad**
-  - Tap to Click
+  - Turn ✅ "Tap to Click"
   - Speed up cursor
 - **Keyboard**
-  - Text
-  - disable "Add full stop with double-space"
-  - disable "Use smart quotes and dashes"
+  - **Text**
+  - Turn ❌ "Add full stop with double-space"
+  - Turn ❌ "Use smart quotes and dashes"
   - use " for double quotes
   - use ' for single quotes
-  - Sources
-  - Add Bulgarian lang
+  - **Sources**
+  - Add Bulgarian layout
 - **Spotlight**
   - Disable Spotlight except for Applications and System Preferences
 - **Mission Control**
-  - Hot Corners: disable all
-- **Finder**
-  - Sidebar:
-  - Activate all Favorites
-  - Create custom Tags - Work, Personal, Important
-  - Show all Filename Extensions
-  - Remove Items from Bin after 30 Days
-  - Open new window in user $HOME directory
-  - Search in directory actual
-  - View:
-  - Show path bar
-  - Show status bar
+  - **Hot Corners**
+  - Turn ❌ all
+- **Apple ID**
+  - **iCloud**
+  - Turn ✅ "Hide My Email"
 - **Sharing**
   - Make sure only you want for sharing is enabled
-- **Storage**
-  - Remove unused apps
+- **Security and Privacy settings**
+  - **General**
+  - Set Require Password to immediately
+  - **FileVault**
+  - Turn ✅ "FileVault"
+  - **Firewall**
+  - Turn ✅ "Firewall"
+  - Turn ❌ "Automatically allow signed software to receive incoming connections"
+  - **Privacy**
+  - Set default privacy settings for apps
+
+# 4) Software Preferences
+
+- **Finder**
+  - **General**
+  - Turn ❌ to show hard disks on desktop
+  - Turn ❌ to show connecting servers
+  - Setup to open new windows in `$HOME` user directory
+  - **Tags**
+  - Create custom Tags - Work 🟢, Important 🔴, Curses 🔵
+  - Remove unused tags
+  - **Sidebar**
+  - Activate all Favorites in Sidebar except of
+  - Show all Filename Extensions
+  - Remove Items from Bin after 30 Days
+  - **Advanced**
+  - Turn ✅ all options
+  - Setup search in directory actual
+  - **View**
+  - Turn ✅ to show path bar
+  - Turn ✅ to show status bar
+- **Safari**
+  - **General**
+  - Setup "https://www.startpage.com/" as a start page
+  - Turn ❌ "Auto Open Safe Download"
+  - **AutoFill**
+  - Turn ❌ everything
+  - **Passwords**
+  - Turn ❌ ,I don't use
+  - **Search**
+  - Add [DuckDuckGo](https://duckduckgo.com/) as a default search engine
+  - Turn ❌ Safari Suggestions
+  - Turn ❌ show favorites
+- **Privacy**
+  - Turn ✅ Prevent cross-site tracking (This should be checked by default.)
+  - Turn ✅ Hide IP address from trackers
+  - Turn ❌ websites to check for Apple Pay & Apple Card
+  - **Extensions**
+  - Adguard (enable all)
+  - Bitwarden
+- **Firefox**
+- Install `$> brew install --cask firefox`
+- Setup Firefox Privacy – The Complete How-To Guide for 2022 click [here](https://restoreprivacy.com/firefox-privacy/)
+- Extensions
+  - [Bitwarden](https://addons.mozilla.org/es/firefox/addon/bitwarden-password-manager/)
+  - [Ublock origin](https://ublockorigin.com/)
+  - [StartPage](https://addons.mozilla.org/es/firefox/addon/startpage-private-search/?src=external-marketing-pages)
+  - [I don't care about cookies](https://addons.mozilla.org/es/firefox/addon/i-dont-care-about-cookies/)
