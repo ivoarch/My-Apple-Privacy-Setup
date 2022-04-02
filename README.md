@@ -49,29 +49,6 @@ For installing the packages using Intel, you can now use:
 arch -x86_64 brew install foo
 ```
 
-- Font [Fira Code](https://github.com/tonsky/FiraCode)
-- Color theme [Dracula](https://draculatheme.com/iterm)
-
-### Install Fira fonts
-
-```
-brew tap homebrew/cask-fonts
-brew install --cask font-fira-code
-```
-
-### Dracula theme
-
-```
-git clone https://github.com/dracula/iterm.git
-```
-
-Activating theme
-**iTerm2 > Preferences > Profiles > Colors Tab**
-Open the **Color Presets...** drop-down in the bottom right corner
-Select **Import...** from the list
-Select the **Dracula.itermcolors** file
-Select the **Dracula** from **Color Presets**...
-
 ### Setup SSH
 
 - Create ssh key by following the steps:
@@ -319,11 +296,13 @@ brew install --cask \
   - Install `brew install iterm2`
   - **ZSH**
   - Setup zsh see in [docs]()
-  - **Dracula Colors**
-  - Install Dracula theme `git clone https://github.com/dracula/iterm.git`
+  - **Dracula theme**
+  - Install `git clone https://github.com/dracula/iterm.git`
   - **Activating theme**
-    1 iTerm2 > Preferences > Profiles > Colors Tab
-    2 Open the **Color Presets...** drop-down in the bottom right corner
-    3 Select **Import...** from the list
-    4 Select the **Dracula.itermcolors** file
-    5 Select the **Dracula** from **Color Presets**...
+    - 1 iTerm2 > Preferences > Profiles > Colors Tab
+    - 2 Open the **Color Presets...** drop-down in the bottom right corner
+    - 3 Select **Import...** from the list
+    - 4 Select the **Dracula.itermcolors** file
+    - 5 Select the **Dracula** from **Color Presets**...
+  - **Fira Fonts**
+  - Install `brew tap homebrew/cask-fonts && brew install --cask font-fira-code`
