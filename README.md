@@ -16,6 +16,8 @@ Flush the DNS cache by typing:
 dscacheutil -flushcache
 ```
 
+---
+
 # 2) Install Software
 
 ## 2.1) Xcode and cli tools
@@ -47,51 +49,15 @@ For installing the packages using Intel, you can now use:
 arch -x86_64 brew install foo
 ```
 
-## Terminal Setup
-
-- Terminal [Iterm2](https://iterm2.com)
-- ZSH + [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
-- Terminal Prompt [Spaceship](https://github.com/spaceship-prompt/spaceship-prompt)
 - Font [Fira Code](https://github.com/tonsky/FiraCode)
 - Color theme [Dracula](https://draculatheme.com/iterm)
 
-### Install Iterm2
-
-```
-brew install --cask iterm2
-```
-
-### Install Oh My ZSH and plugins (zsh-autosuggestions, zsh-syntax-highlighting)
-
-```
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-```
-
-Add to `.zshrc` config file
-
-```
-plugins=(zsh-autosuggestions
-         zsh-syntax-highlighting)
-```
-
-### Install Spaceship prompt
-
-```
-git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
-ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
-```
-
-Set `ZSH_THEME="spaceship"` in your `.zshrc` config file.
-
 ### Install Fira fonts
 
-In the [downloaded TTF folder](https://github.com/tonsky/FiraCode/releases):
-
-1. Select all font files
-1. Right click and select `Open` (alternatively `Open With Font Book`)
-1. Select "Install Font"
+```
+brew tap homebrew/cask-fonts
+brew install --cask font-fira-code
+```
 
 ### Dracula theme
 
@@ -105,13 +71,6 @@ Open the **Color Presets...** drop-down in the bottom right corner
 Select **Import...** from the list
 Select the **Dracula.itermcolors** file
 Select the **Dracula** from **Color Presets**...
-
-## VPN Setup
-
-### Install Mullvad VPN
-
-- [Download](https://mullvad.net/download/) the latest version of the app from our website.
-- Instruction to install click [here](https://mullvad.net/es/help/install-and-use-mullvad-app-macos/) .
 
 ### Setup SSH
 
@@ -130,11 +89,15 @@ By default both private and public keys will be located in your `$HOME/.ssh` dir
 
 Run: `pbcopy < ls ~/.ssh/id_ed25519.pub` which copies the file into your clipboard .
 
-## Development Environment
+## 2.3) Development Environment
 
 ### Android Dev
 
 - [Android file transfer](https://www.android.com/filetransfer/)
+
+```
+brew android-file-transfer
+```
 
 ### Python
 
@@ -154,8 +117,7 @@ brew install openjdk
 
 - [Docker](https://www.docker.com) -
 - [Visual studio Code](https://code.visualstudio.com) - Default editor
-  - Extensions
-  - [Colorize](https://marketplace.visualstudio.com/items?itemName=kamikillerto.vscode-colorize)
+  - **Extensions**
   - [Docker](https://marketplace.visualstudio.com/itemsitemName=ms-azuretools.vscode-docker)
   - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
   - [Python/Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
@@ -163,8 +125,9 @@ brew install openjdk
   - [Rainbow Brackets](https://marketplace.visualstudio.com/items?itemName=2gua.rainbow-brackets)
   - [ShellCheck](https://marketplace.visualstudio.com/items?itemName=timonwong.shellcheck)
   - [Dracula theme](https://marketplace.visualstudio.com/items?itemName=dracula-theme.dracula)
-  - [Markdown preview enhanced]()
-  - [Material Icon theme]()
+  - [Markdown preview enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
+  - [Material Icon theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+  - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [Git](https://git-scm.com) - Version control system
 - [UTM](https://mac.getutm.app) - Virtual Machines
 
@@ -181,8 +144,13 @@ brew install \
   tree \
   htop \
   exa \
+  pinfo \
   youtube-dl \
   neofetch \
+  pstree \
+  gnupg \
+  nano \
+  wget \
   imagemagick
 ```
 
@@ -219,14 +187,19 @@ brew install --cask \
 - [Internet Access Policy Viewer](https://obdev.at/products/iapviewer/index.html) - A better view on privacy.
 - [Mullvad](https://mullvad.net) - Open-source commercial VPN service based in Sweden.
 - [Secretive](https://github.com/maxgoedjen/secretive) - is an app for storing and managing SSH keys in the Secure Enclave .
+- [Veracrypt](https://www.veracrypt.fr/en/Home.html) - free open source disk encryption software for Windows, Mac OSX and Linux.
 
 ```
 brew install --cask \
   bitwarden \
   micro-snitch \
   cryptomator \
-  secretive
+  secretive \
+  mullvadvpn \
+  veracrypt
 ```
+
+---
 
 # 3) System Preferences
 
@@ -293,6 +266,8 @@ brew install --cask \
   - **Privacy**
   - Set default privacy settings for apps
 
+---
+
 # 4) Software Preferences
 
 - **Finder**
@@ -333,10 +308,22 @@ brew install --cask \
   - Adguard (enable all)
   - Bitwarden
 - **Firefox**
-- Install `$> brew install --cask firefox`
-- Setup Firefox Privacy – The Complete How-To Guide for 2022 click [here](https://restoreprivacy.com/firefox-privacy/)
-- Extensions
+  - Install `brew install --cask firefox`
+  - Setup Firefox Privacy – The Complete How-To Guide for 2022 click [here](https://restoreprivacy.com/firefox-privacy/)
+  - Extensions
   - [Bitwarden](https://addons.mozilla.org/es/firefox/addon/bitwarden-password-manager/)
   - [Ublock origin](https://ublockorigin.com/)
   - [StartPage](https://addons.mozilla.org/es/firefox/addon/startpage-private-search/?src=external-marketing-pages)
   - [I don't care about cookies](https://addons.mozilla.org/es/firefox/addon/i-dont-care-about-cookies/)
+- **Iterm2**
+  - Install `brew install iterm2`
+  - **ZSH**
+  - Setup zsh see in [docs]()
+  - **Dracula Colors**
+  - Install Dracula theme `git clone https://github.com/dracula/iterm.git`
+  - **Activating theme**
+    1 iTerm2 > Preferences > Profiles > Colors Tab
+    2 Open the **Color Presets...** drop-down in the bottom right corner
+    3 Select **Import...** from the list
+    4 Select the **Dracula.itermcolors** file
+    5 Select the **Dracula** from **Color Presets**...
