@@ -14,7 +14,7 @@ brew bundle dump
 export HOMEBREW_NO_ANALYTICS=1
 ```
 
-# View current config
+### View current config
 
 ```
 brew config
