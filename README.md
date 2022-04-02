@@ -287,7 +287,7 @@ brew install --cask \
 - **Firefox**
   - Install `brew install --cask firefox`
   - Setup Firefox Privacy – The Complete How-To Guide for 2022 click [here](https://restoreprivacy.com/firefox-privacy/)
-  - Extensions
+  - **Extensions**
   - [Bitwarden](https://addons.mozilla.org/es/firefox/addon/bitwarden-password-manager/)
   - [Ublock origin](https://ublockorigin.com/)
   - [StartPage](https://addons.mozilla.org/es/firefox/addon/startpage-private-search/?src=external-marketing-pages)
@@ -295,7 +295,7 @@ brew install --cask \
 - **Iterm2**
   - Install `brew install iterm2`
   - **ZSH**
-  - Setup zsh see in [docs]()
+  - Setup zsh see in [docs](https://github.com/ivoarch/.dotfiles/blob/main/docs/Zsh.md)
   - **Dracula theme**
   - Install `git clone https://github.com/dracula/iterm.git`
   - **Activating theme**
