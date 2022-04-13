@@ -119,6 +119,7 @@ brew install \
 - ✅ 🍺 [Telegram](https://telegram.org) - Chat .
 - ✅ 🍺 [Hiddenbar](https://github.com/dwarvesf/hidden) - Hide menu bar items to give your Mac a cleaner look.
 - ✳️ 🍺 [Tutanota](https://tutanota.com/es/) - is an end-to-end encrypted email software and freemium hosted secure email service
+- ✅ 🍺 [Netcloud](https://nextcloud.com/) - File hosting service
 
 ```
 brew install --cask \
@@ -129,7 +130,8 @@ brew install --cask \
   telegram \
   deepl \
   hiddenbar \
-  tutanota
+  tutanota \
+  nextcloud
 
 ```
 
