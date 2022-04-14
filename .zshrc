@@ -135,6 +135,9 @@ alias Q='q'
 alias t='touch'
 alias j='jobs'
 
+# Docs
+alias info='pinfo'
+
 # Navigation
 alias ..="cd .."
 alias ...="cd ../.."
@@ -147,6 +150,7 @@ alias rm='rm -vi'
 
 # No correct commands
 alias man='nocorrect man'
+alias pinfo='nocorrect pinfo'
 alias mv='nocorrect mv'
 alias mysql='nocorrect mysql'
 alias mkdir='nocorrect mkdir'
@@ -163,6 +167,11 @@ alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pas
 mc () {
   # Create a new directory and enter it
   mkdir -p "$@" && cd "$@"
+}
+
+mp3 () {
+  # Download mp3 from Youtube
+	youtube-dl -x --audio-format mp3 --embed-thumbnail --add-metadata --output "~/Music/%(title)s.%(ext)s" "$1"
 }
 
 # macOS Monterey’s Built-In Network Quality Test

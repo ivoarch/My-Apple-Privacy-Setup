@@ -105,6 +105,7 @@ brew install \
   gnupg \
   nano \
   wget \
+  ffmpeg \
   imagemagick
 ```
 
