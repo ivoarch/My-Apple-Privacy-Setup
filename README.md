@@ -87,10 +87,6 @@ brew install --cask \
   utm
 ```
 
-## 🗄️ Office & Productivity Tools
-
-- ✅ [Microsoft Office 365](https://www.office.com) - Microsoft office package
-
 ## <~/> Cli Tools
 
 ```
