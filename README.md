@@ -197,6 +197,8 @@ brew install --cask \
 - **💻🖱️ Trackpad**
   - Turn ✅ "Tap to Click"
   - Ingrease the cursor speed
+- **🧩 Extension**
+  - Turn ❌ unecessary extensions
 - **⌨️ Keyboard**
   - **Text**
   - Turn ❌ "Add full stop with double-space"
@@ -206,7 +208,7 @@ brew install --cask \
   - **Sources**
   - Add Bulgarian layout
 - **🔍 Spotlight**
-  - Disable Spotlight except for Applications and System Preferences
+  - Turn ✅ Spotlight only for Applications , PDF Documents, System Preferences
 - **Mission Control**
   - **Hot Corners**
   - Turn ❌ all
@@ -247,7 +249,7 @@ brew install --cask \
   - Create custom Tags - Work 🟢, Important 🔴, Curses 🔵
   - Remove unused tags
   - **Sidebar**
-  - Activate all Favorites in Sidebar except of
+  - Turn ❌ "iCloud Drive", "Cloud Storage", "Bonjour Computers"
   - Show all Filename Extensions
   - Remove Items from Bin after 30 Days
   - **Advanced**
@@ -277,12 +279,31 @@ brew install --cask \
   - Bitwarden
 - **Firefox**
   - Install 🍺 `brew install --cask firefox`
-  - Setup Firefox Privacy – The Complete How-To Guide for 2022 click [here](https://restoreprivacy.com/firefox-privacy/)
+  - **Home**
+  - Home page and new windows - Select ✅ Custom Urls -> https://www.startpage.com -> New Tabs -> Firefox Home (Default)
+  - Recent activity - Turn ❌ everything
+  - **Search**
+  - Default Search Engine - Select ✅ Startpage.com
+  - Search Suggestions - Turn ❌ everything
+  - **Privacy & Security**
+  - Enhanced Tracking Protection (ETP): Select ✅ "Strict"
+  - Send web sites a “Do Not Track” signal that you don’t want to be tracked : Select ✅ "Always"
+  - Cookies and Site Data - Select ✅ "Delete cookies and site data when Firefox is closed" (You can still stay logged into websites by allowing exceptions).
+  - Logins and Passwords - Turn ❌ everything
+  - History - Select ✅ Clear history when Firefox closes
+  - Permissions - Setting permissions
+  - Firefox Data Collection and Use - Turn ❌ everything
+  - Deceptive Content and Dangerous Software Protection - Select ✅ everything
+    HTTPS-Only Mode - Select ✅ "HTTPS-Only Mode in all windows"
+  - **Sync**
+  - Sync with Firefox account (The Firefox sync service is end-to-end encrypted.)
+  - FF Sync apps - Setting FF Monitor to monitor a my email adress for security breaches . Check for [Security tips](https://monitor.firefox.com/security-tips)
   - **🧩 Extensions**
   - [Bitwarden](https://addons.mozilla.org/es/firefox/addon/bitwarden-password-manager/)
   - [Ublock origin](https://ublockorigin.com/)
   - [StartPage](https://addons.mozilla.org/es/firefox/addon/startpage-private-search/?src=external-marketing-pages)
   - [I don't care about cookies](https://addons.mozilla.org/es/firefox/addon/i-dont-care-about-cookies/)
+  - [Firefox Relay](https://addons.mozilla.org/en-GB/firefox/addon/private-relay/?utm_source=fx-relay&utm_medium=banner&utm_campaign=install-addon)
 - **Iterm2**
   - Install 🍺 `brew install iterm2`
   - **ZSH**
