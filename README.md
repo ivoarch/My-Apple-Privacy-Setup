@@ -108,15 +108,17 @@ brew install \
 ## 🗂 Other applications
 
 - ✅ 🍺 [Appcleaner](https://freemacsoft.net/appcleaner/) - Application which allows you to thoroughly uninstall unwanted apps.
-- ✅ 🍺 [Amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704?mt=12) - For keeping your Mac awake
+- ✅ 🍺 [Amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704?mt=12) - For keeping your Mac awake .
 - ✅ 🍺 [Rectangle](https://rectangleapp.com) - Move and resize windows in macOS using keyboard shortcuts .
 - ✅ 🍺 [Maccy](https://maccy.app) - Clipboard manager .
 - ✅ 🍺 [Keka](https://www.keka.io/es/) - The macOS file archiver.
 - ✳️ 🍺 [DeepL](https://www.deepl.com/translator) - Translator .
 - ✅ 🍺 [Telegram](https://telegram.org) - Chat .
 - ✅ 🍺 [Hiddenbar](https://github.com/dwarvesf/hidden) - Hide menu bar items to give your Mac a cleaner look.
-- ✳️ 🍺 [Tutanota](https://tutanota.com/es/) - is an end-to-end encrypted email software and freemium hosted secure email service
-- ✅ 🍺 [Nextcloud](https://nextcloud.com/) - File hosting service
+- ✳️ 🍺 [Tutanota](https://tutanota.com/es/) - is an end-to-end encrypted email software and freemium hosted secure email service .
+- ✅ 🍺 [Nextcloud](https://nextcloud.com/) - File hosting service .
+- ✅ 🍺 [Thunderbird](https://www.thunderbird.net/en-GB/) - is a free email application that’s easy to set up and customise .
+- ✅ 🍺 [Firefox](https://www.mozilla.org/) - is a free and open-source web browser .
 
 ```
 brew install --cask \

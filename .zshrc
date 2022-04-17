@@ -86,8 +86,8 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-export LANG="es_ES.UTF-8"
-export LC_ALL="es_ES.UTF-8"
+export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -174,5 +174,22 @@ mp3 () {
 	youtube-dl -x --audio-format mp3 --embed-thumbnail --add-metadata --output "~/Music/%(title)s.%(ext)s" "$1"
 }
 
+# Download mp4 video from Youtube
+alias mp4="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'"
+
+# IP Adress info
+alias localip="ipconfig getifaddr en0"
+alias ip="curl ifconfig.me"
+
+#### macOS Operating system specific aliases
+# Brew update
+alias brupdate="brew update && brew upgrade && brew doctor && brew cleanup"
+
 # macOS Monterey’s Built-In Network Quality Test
 alias speedtest="networkQuality"
+
+# Remove .DS_store from dir & subdir
+alias rmds="find . -name '*.DS_Store' -type f -delete"
+
+# Flush Directory Service cache 
+alias flush='dscacheutil -flushcache'
