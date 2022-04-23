@@ -98,6 +98,7 @@ export LC_ALL="en_US.UTF-8"
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
 
 export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/Users/ivo/bin"
 # openjdk
