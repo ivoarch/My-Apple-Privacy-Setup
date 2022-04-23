@@ -260,6 +260,7 @@ brew install --cask \
   - **View**
   - Turn ✅ to show path bar
   - Turn ✅ to show status bar
+  - Show View Options (or press `Command+J`) > Turn ✅ Show Library Folder
 - **Safari**
   - **General**
   - Setup "https://www.startpage.com/" as a start page
