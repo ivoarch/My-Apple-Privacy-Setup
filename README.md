@@ -116,7 +116,6 @@ brew install \
 - ✅ 🍺 [Telegram](https://telegram.org) - Chat .
 - ✅ 🍺 [Hiddenbar](https://github.com/dwarvesf/hidden) - Hide menu bar items to give your Mac a cleaner look.
 - ✳️ 🍺 [Tutanota](https://tutanota.com/es/) - is an end-to-end encrypted email software and freemium hosted secure email service .
-- ✅ 🍺 [Nextcloud](https://nextcloud.com/) - File hosting service .
 - ✅ 🍺 [Thunderbird](https://www.thunderbird.net/en-GB/) - is a free email application that’s easy to set up and customise .
 - ✅ 🍺 [Firefox](https://www.mozilla.org/) - is a free and open-source web browser .
 
@@ -129,9 +128,7 @@ brew install --cask \
   telegram \
   deepl \
   hiddenbar \
-  tutanota \
-  nextcloud
-
+  tutanota
 ```
 
 ## 🛡️ Security tools
@@ -282,6 +279,9 @@ brew install --cask \
   - Bitwarden
 - **Firefox**
   - Install 🍺 `brew install --cask firefox`
+  - Set as default browser
+  - **General**
+  - Browsing - Turn ❌ "Recommend extensions as you browse" also "Recommend features as you browse"
   - **Home**
   - Home page and new windows - Select ✅ Custom Urls -> https://www.startpage.com -> New Tabs -> Firefox Home (Default)
   - Recent activity - Turn ❌ everything
@@ -293,7 +293,8 @@ brew install --cask \
   - Send web sites a “Do Not Track” signal that you don’t want to be tracked : Select ✅ "Always"
   - Cookies and Site Data - Select ✅ "Delete cookies and site data when Firefox is closed" (You can still stay logged into websites by allowing exceptions).
   - Logins and Passwords - Turn ❌ everything
-  - History - Select ✅ Clear history when Firefox closes
+  - History -> Custom Settings -> Select ✅ Clear history when Firefox closes
+  - Address Bar -> When using the address bar, suggest -> Turn ❌ everything
   - Permissions - Setting permissions
   - Firefox Data Collection and Use - Turn ❌ everything
   - Deceptive Content and Dangerous Software Protection - Select ✅ everything
