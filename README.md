@@ -118,6 +118,8 @@ brew install \
 - ✳️ 🍺 [Tutanota](https://tutanota.com/es/) - is an end-to-end encrypted email software and freemium hosted secure email service .
 - ✅ 🍺 [Thunderbird](https://www.thunderbird.net/en-GB/) - is a free email application that’s easy to set up and customise .
 - ✅ 🍺 [Firefox](https://www.mozilla.org/) - is a free and open-source web browser .
+- ✅ 🍺 [VLC](https://www.videolan.org/) - free and open source cross-platform multimedia player .
+- ✅ 🍺 [Vorta](https://vorta.borgbase.com/) - is a backup client for macOS and Linux desktops .
 
 ```
 brew install --cask \
@@ -128,8 +130,11 @@ brew install --cask \
   telegram \
   deepl \
   hiddenbar \
-  tutanota
+  tutanota \
+  vlc \
 ```
+
+To install Vorta check in 📁 [docs](https://github.com/ivoarch/.dotfiles/blob/main/docs/Vorta.md)
 
 ## 🛡️ Security tools
 
