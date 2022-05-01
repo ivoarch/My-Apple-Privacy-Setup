@@ -330,6 +330,7 @@ brew install --cask \
 - **Mullvad VPN**
   - **Advanced settings**
   - Turn ✅ "Always require VPN"
+  - Tunel Protocol set ✅ "WireGuard"
   - **Preferences**
   - Turn ✅ Everything
   - Turn ❌ "Beta Program"
