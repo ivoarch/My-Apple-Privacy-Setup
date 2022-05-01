@@ -99,10 +99,24 @@ export LC_ALL="en_US.UTF-8"
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
+export LDFLAGS="-L/opt/homebrew/opt/openssl@3/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/openssl@3/include"
+export LDFLAGS="-L/opt/homebrew/opt/zlib/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/zlib/include"
 
 export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/Users/ivo/bin"
 # openjdk
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+#eval "$(pyenv init --path)"
+#eval "$(pyenv init -)"
+
+export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
+
+export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@3/lib/pkgconfig"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/zlib/lib/pkgconfig"
 
 # Prevent Homebrew from gathering analytics
 export HOMEBREW_NO_ANALYTICS=1
@@ -135,6 +149,7 @@ alias q='exit'
 alias Q='q'
 alias t='touch'
 alias j='jobs'
+alias tree="tree -C"
 
 # Docs
 alias info='pinfo'
