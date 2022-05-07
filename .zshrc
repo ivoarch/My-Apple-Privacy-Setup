@@ -209,3 +209,6 @@ alias rmds="find . -name '*.DS_Store' -type f -delete"
 
 # Flush Directory Service cache 
 alias flush='dscacheutil -flushcache'
+
+# https://github.com/CooperRS/decrypt-otpauth-files
+alias otp-decrypt="pipenv run python decrypt_otpauth.py decrypt_backup --encrypted-otpauth-backup" "$1"
