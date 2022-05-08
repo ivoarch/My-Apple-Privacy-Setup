@@ -256,6 +256,8 @@ brew install --cask \
   - Turn ❌ "iCloud Drive", "Cloud Storage", "Bonjour Computers"
   - Show all Filename Extensions
   - Remove Items from Bin after 30 Days
+  - **Toolbar**
+  - Right click on toolbar and select "New Folder" icon
   - **Advanced**
   - Turn ✅ all options
   - Setup search in directory actual
