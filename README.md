@@ -352,4 +352,7 @@ brew install --cask \
   - [Markdown preview enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
   - [Material Icon theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
   - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-  - View settings [here](https://github.com/ivoarch/.my-macbook-setup/blob/main/vscode/settings.json)
+  - View settings [here](https://github.com/ivoarch/.my-macbook-setup/blob/main/vscode/settings.json) .
+- **Tutanota**
+  - **Settings > Desktop**
+  - Turn ✅ Offline storage
