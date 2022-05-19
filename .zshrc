@@ -195,7 +195,7 @@ alias mp4="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'"
 
 # IP Adress info
 alias localip="ipconfig getifaddr en0"
-alias ip="curl ifconfig.me"
+alias myip="curl ifconfig.me"
 
 #### macOS Operating system specific aliases
 # Brew update
