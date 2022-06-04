@@ -148,6 +148,7 @@ To install Vorta check in 📁 [docs](https://github.com/ivoarch/.dotfiles/blob/
 - ✅ 🍺 [ReiKey](https://objective-see.com/products/reikey.html) - Malware and other applications may install persistent keyboard "event taps" to intercept your keystrokes.
 - ✅ 🍺 [KnockKnock](https://objective-see.com/products/knockknock.html) - See what's persistently installed on your Mac.
 - ✅ 🍺 [Lulu](https://objective-see.com/products/lulu.html) - Open-source firewall.
+- ✅ 🍺 [Tor browser](https://www.torproject.org/download/) - Browse Privately.
 
 ```
 brew install --cask \
@@ -159,7 +160,8 @@ brew install --cask \
   reikey \
   knockknock \
   veracrypt \
-  lulu
+  lulu \
+  tor-browser
 ```
 
 ---
