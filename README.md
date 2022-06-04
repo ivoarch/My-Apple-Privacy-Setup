@@ -333,6 +333,7 @@ brew install --cask \
   - **Advanced settings**
   - Turn ✅ "Always require VPN"
   - Tunel Protocol set ✅ "WireGuard"
+  - Wireguard settings > Turn ✅ "Enable multihop"
   - **Preferences**
   - Turn ✅ Everything
   - Turn ❌ "Beta Program"
