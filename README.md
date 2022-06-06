@@ -316,7 +316,6 @@ brew install --cask \
   - [Ublock origin](https://ublockorigin.com/)
   - [StartPage](https://addons.mozilla.org/es/firefox/addon/startpage-private-search/?src=external-marketing-pages)
   - [I don't care about cookies](https://addons.mozilla.org/es/firefox/addon/i-dont-care-about-cookies/)
-  - [Firefox Relay](https://addons.mozilla.org/en-GB/firefox/addon/private-relay/?utm_source=fx-relay&utm_medium=banner&utm_campaign=install-addon)
 - **Iterm2**
   - Install 🍺 `brew install iterm2`
   - **ZSH**
