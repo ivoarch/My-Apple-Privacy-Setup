@@ -255,7 +255,7 @@ brew install --cask \
   - Create custom Tags - Work 🟢, Important 🔴, Curses 🔵
   - Remove unused tags
   - **Sidebar**
-  - Turn ❌ "iCloud Drive", "Cloud Storage", "Bonjour Computers"
+  - Turn ❌ "Cloud Storage", "Bonjour Computers"
   - Show all Filename Extensions
   - Remove Items from Bin after 30 Days
   - **Toolbar**
