@@ -150,6 +150,7 @@ alias Q='q'
 alias t='touch'
 alias j='jobs'
 alias tree="tree -C"
+alias host="host -v"
 
 # Docs
 alias info='pinfo'
