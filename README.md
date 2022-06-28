@@ -98,7 +98,8 @@ brew install \
   youtube-dl \
   neofetch \
   pstree \
-  gnupg \
+  gnupg
+  grep \
   nano \
   wget \
   ffmpeg \
