@@ -118,6 +118,10 @@ export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@3/lib/pkgconfig"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/zlib/lib/pkgconfig"
 
+# grep 
+# https://apple.stackexchange.com/questions/193288/how-to-install-and-use-gnu-grep-in-macos
+export PATH="/opt/homebrew/opt/grep/libexec/gnubin:$PATH"
+
 # Prevent Homebrew from gathering analytics
 export HOMEBREW_NO_ANALYTICS=1
 # Enable quarantining of Homebrew-Cask's downloads
@@ -213,3 +217,6 @@ alias flush='dscacheutil -flushcache'
 
 # https://github.com/CooperRS/decrypt-otpauth-files
 alias otp-decrypt="pipenv run python decrypt_otpauth.py decrypt_backup --encrypted-otpauth-backup" "$1"
+
+# suffix aliases
+alias -s {cs,html,js,ts,css,scss,md,json}="code"
