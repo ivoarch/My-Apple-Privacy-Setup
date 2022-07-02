@@ -121,6 +121,7 @@ brew install \
 - ✅ 🍺 [Firefox](https://www.mozilla.org/) - is a free and open-source web browser .
 - ✅ 🍺 [VLC](https://www.videolan.org/) - free and open source cross-platform multimedia player .
 - ✅ 🍺 [Vorta](https://vorta.borgbase.com/) - is a backup client for macOS and Linux desktops .
+- 🔶 🍺 [Tiddle desktop](https://github.com/TiddlyWiki/TiddlyDesktop) - special purpose web browser for working with locally stored TiddlyWikis .
 
 ```
 brew install --cask \
@@ -133,6 +134,7 @@ brew install --cask \
   hiddenbar \
   tutanota \
   vlc \
+  tiddly
 ```
 
 To install Vorta check in 📁 [docs](https://github.com/ivoarch/.dotfiles/blob/main/docs/Vorta.md)
