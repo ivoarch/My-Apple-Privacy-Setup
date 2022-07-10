@@ -1,9 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# https://docs.brew.sh/Shell-Completion
-FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
-
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -82,8 +79,8 @@ plugins=(git
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
+export PATH="/usr/local/bin:/opt/local/sbin:/opt/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/Users/ivo/bin:/opt/local/libexec/gnubin/:$PATH"
+export MANPATH="/usr/local/man:/opt/local/share/man:$MANPATH"
 
 # You may need to manually set your language environment
 export LANG="en_US.UTF-8"
@@ -98,36 +95,12 @@ export LC_ALL="en_US.UTF-8"
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
-export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
-export LDFLAGS="-L/opt/homebrew/opt/openssl@3/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/openssl@3/include"
-export LDFLAGS="-L/opt/homebrew/opt/zlib/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/zlib/include"
-
-export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/Users/ivo/bin"
-# openjdk
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
-#eval "$(pyenv init --path)"
-#eval "$(pyenv init -)"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
 
-export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
-
-export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@3/lib/pkgconfig"
-export PKG_CONFIG_PATH="/opt/homebrew/opt/zlib/lib/pkgconfig"
-
-# grep 
-# https://apple.stackexchange.com/questions/193288/how-to-install-and-use-gnu-grep-in-macos
-export PATH="/opt/homebrew/opt/grep/libexec/gnubin:$PATH"
-
-# Prevent Homebrew from gathering analytics
-export HOMEBREW_NO_ANALYTICS=1
-# Enable quarantining of Homebrew-Cask's downloads
-export HOMEBREW_CASK_OPTS=--no-quarantine
-# For Sectrive
-export SSH_AUTH_SOCK=/Users/ivo/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -204,7 +177,13 @@ alias myip="curl ifconfig.me"
 
 #### macOS Operating system specific aliases
 # Brew update
-alias brupdate="brew update && brew upgrade && brew doctor && brew cleanup"
+#alias brupdate="brew update && brew upgrade && brew doctor && brew cleanup"
+
+# MacPorts aliases
+alias pc="sudo port -v clean --all installed"
+alias portcleanup="sudo port -v uninstall inactive"
+alias portupdate="sudo port -v selfupdate && sudo port upgrade outdated"
+alias portinstalled="sudo port -v installed"
 
 # macOS Monterey’s Built-In Network Quality Test
 alias speedtest="networkQuality"
@@ -220,3 +199,19 @@ alias otp-decrypt="pipenv run python decrypt_otpauth.py decrypt_backup --encrypt
 
 # suffix aliases
 alias -s {cs,html,js,ts,css,scss,md,json}="code"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/ivo/miniforge3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/ivo/miniforge3/etc/profile.d/conda.sh" ]; then
+        . "/Users/ivo/miniforge3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/ivo/miniforge3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

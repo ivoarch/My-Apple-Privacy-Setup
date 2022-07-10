@@ -1,10 +1,12 @@
 # My macbook 💻 ( Chip) Setup Guide
 
-✅ Native Support ✳️ Rosetta 🔶 Need Info 🚫 Unsupported 🍺 HomeBrew Formulae
+# 💻 Factory Reset
+
+https://support.apple.com/guide/mac-help/erase-and-reinstall-macos-mh27903/mac
 
 # 🖥 Setting up computer name
 
-Setting up computer name, hostname
+## Setting up computer name, hostname
 
 ```
 sudo scutil --set ComputerName "newname"
@@ -22,150 +24,85 @@ dscacheutil -flushcache
 
 # 📦 Install Software
 
-## Xcode (CLI tools)
-
-```
-/usr/sbin/softwareupdate --install-rosetta --agree-to-license
-```
-
-```
-xcode-select --install
-```
-
-## HomeBrew
+##  MacPorts
 
 Package management for macOS
 
-```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-For X86_64 packages
+1. Install [Xcode and the Xcode Command Line Tools](https://guide.macports.org/#installing.xcode)
+2. Agree to Xcode license in Terminal:
 
 ```
-arch -x86_64 zsh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+xcodebuild -license
 ```
 
-For installing the packages using Intel, you can now use:
-
-```
-arch -x86_64 brew install foo
-```
+3. Download MacPorts for macOS Monterey v12 - [download](https://github.com/macports/macports-base/releases/download/v2.7.2/MacPorts-2.7.2-12-Monterey.pkg)
 
 ## Development Environment
 
-### Python
+### 🐍 Python
 
-- ✅ [Miniforge](https://github.com/conda-forge/miniforge)
+- [Miniforge](https://github.com/conda-forge/miniforge#download) - latest arm64 (Apple Silicon)
 
 ```
+chmod +x Miniforge3-MacOSX-arm64.sh
 ./Miniforge3-MacOSX-arm64.sh
-```
-
-### Java/JDK
-
-✅ 🍺
-
-```
-brew install openjdk
 ```
 
 ## Development tools
 
-- ✳️ 🍺 [Android file transfer](https://www.android.com/filetransfer/) - Transfer files between your Mac and your Android device
-- ✅ 🍺 [Docker](https://www.docker.com) - Run containers
-- ✅ 🍺 [VS Code](https://code.visualstudio.com) - Code editing
+- [Android file transfer](https://www.android.com/filetransfer/) - Transfer files between your Mac and your Android device
+- [Docker](https://www.docker.com) - Run containers
+- [VS Code](https://code.visualstudio.com) - Code editing
 - [Git](https://git-scm.com) - Version control system
-- ✅ 🍺 [UTM](https://mac.getutm.app) - Run Virtual Machines
-
-```
-brew install --cask \
-  android-file-transfer \
-  visual-studio-code \
-  docker \
-  utm
-```
+- [UTM](https://mac.getutm.app) - Run Virtual Machines
 
 ## <~/> Cli Tools
 
 ```
-brew install \
+sudo port -v install \
   coreutils \
+  docker \
   tree \
   htop \
-  pinfo \
   youtube-dl \
-  neofetch \
   pstree \
-  gnupg
+  gnupg2 \
   grep \
-  nano \
   wget \
   ffmpeg \
-  imagemagick
+  imagemagick \
+  pipenv
 ```
 
 ## 🗂 Other applications
 
-- ✅ 🍺 [Appcleaner](https://freemacsoft.net/appcleaner/) - Application which allows you to thoroughly uninstall unwanted apps.
-- ✅ 🍺 [Amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704?mt=12) - For keeping your Mac awake .
-- ✅ 🍺 [Rectangle](https://rectangleapp.com) - Move and resize windows in macOS using keyboard shortcuts .
-- ✅ 🍺 [Maccy](https://maccy.app) - Clipboard manager .
-- ✅ 🍺 [Keka](https://www.keka.io/es/) - The macOS file archiver.
-- ✳️ 🍺 [DeepL](https://www.deepl.com/translator) - Translator .
-- ✅ 🍺 [Telegram](https://telegram.org) - Chat .
-- ✅ 🍺 [Hiddenbar](https://github.com/dwarvesf/hidden) - Hide menu bar items to give your Mac a cleaner look.
-- ✳️ 🍺 [Tutanota](https://tutanota.com/es/) - is an end-to-end encrypted email software and freemium hosted secure email service .
-- ✅ 🍺 [Thunderbird](https://www.thunderbird.net/en-GB/) - is a free email application that’s easy to set up and customise .
-- ✅ 🍺 [Firefox](https://www.mozilla.org/) - is a free and open-source web browser .
-- ✅ 🍺 [VLC](https://www.videolan.org/) - free and open source cross-platform multimedia player .
-- ✅ 🍺 [Vorta](https://vorta.borgbase.com/) - is a backup client for macOS and Linux desktops .
-- 🔶 🍺 [Tiddle desktop](https://github.com/TiddlyWiki/TiddlyDesktop) - special purpose web browser for working with locally stored TiddlyWikis .
-
-```
-brew install --cask \
-  appcleaner \
-  rectangle \
-  maccy \
-  keka \
-  telegram \
-  deepl \
-  hiddenbar \
-  tutanota \
-  vlc \
-  tiddly
-```
+- [Appcleaner](https://freemacsoft.net/appcleaner/) - Application which allows you to thoroughly uninstall unwanted apps.
+- [Amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704?mt=12) - For keeping your Mac awake .
+- [Rectangle](https://rectangleapp.com) - Move and resize windows in macOS using keyboard shortcuts .
+- [Maccy](https://maccy.app) - Clipboard manager .
+- [Keka](https://www.keka.io/es/) - The macOS file archiver.
+- [Telegram](https://telegram.org) - Chat .
+- [Hiddenbar](https://github.com/dwarvesf/hidden) - Hide menu bar items to give your Mac a cleaner look.
+- [Tutanota](https://tutanota.com/es/) - is an end-to-end encrypted email software and freemium hosted secure email service .
+- [Firefox](https://www.mozilla.org/) - is a free and open-source web browser .
+- [VLC](https://www.videolan.org/) - free and open source cross-platform multimedia player .
+- [Vorta](https://vorta.borgbase.com/) - is a backup client for macOS and Linux desktops .
+- [Tiddle desktop](https://github.com/TiddlyWiki/TiddlyDesktop) - special purpose web browser for working with locally stored TiddlyWikis .
 
 To install Vorta check in 📁 [docs](https://github.com/ivoarch/.dotfiles/blob/main/docs/Vorta.md)
 
 ## 🛡️ Security tools
 
-- ✅ 🍺 [Bitwarden](https://bitwarden.com/) - Open Source password manager .
-- ✅ 🍺 [Cryptomator](https://cryptomator.org) - Protect your data in the cloud .
+- [Bitwarden](https://bitwarden.com/) - Open Source password manager .
+- [Cryptomator](https://cryptomator.org) - Protect your data in the cloud .
 - [Internet Access Policy Viewer](https://obdev.at/products/iapviewer/index.html) - A better view on privacy.
-- ✅ 🍺 [Mullvad](https://mullvad.net) - Open-source commercial VPN service based in Sweden.
-- ✅ 🍺 [Secretive](https://github.com/maxgoedjen/secretive) - App for storing and managing SSH keys in the Secure Enclave .
-- ✅ 🍺 [Veracrypt](https://www.veracrypt.fr/en/Home.html) - free open source disk encryption software.
-- ✅ 🍺 [OverSight](https://objective-see.com/products/oversight.html) - Monitors a mac's mic and webcam .
-- ✅ 🍺 [ReiKey](https://objective-see.com/products/reikey.html) - Malware and other applications may install persistent keyboard "event taps" to intercept your keystrokes.
-- ✅ 🍺 [KnockKnock](https://objective-see.com/products/knockknock.html) - See what's persistently installed on your Mac.
-- ✅ 🍺 [Lulu](https://objective-see.com/products/lulu.html) - Open-source firewall.
-- ✅ 🍺 [Tor browser](https://www.torproject.org/download/) - Browse Privately.
-
-```
-brew install --cask \
-  bitwarden \
-  oversight \
-  cryptomator \
-  secretive \
-  mullvadvpn \
-  reikey \
-  knockknock \
-  veracrypt \
-  lulu \
-  tor-browser
-```
+- [Mullvad](https://mullvad.net) - Open-source commercial VPN service based in Sweden.
+- [Secretive](https://github.com/maxgoedjen/secretive) - App for storing and managing SSH keys in the Secure Enclave .
+- [Veracrypt](https://www.veracrypt.fr/en/Home.html) - free open source disk encryption software.
+- [Micro Snitch](https://www.obdev.at/products/microsnitch/index.html) - Monitors a mac's mic and webcam .
+- [ReiKey](https://objective-see.com/products/reikey.html) - Malware and other applications may install persistent keyboard "event taps" to intercept your keystrokes.
+- [KnockKnock](https://objective-see.com/products/knockknock.html) - See what's persistently installed on your Mac.
+- [Lulu](https://objective-see.com/products/lulu.html) - Open-source firewall.
 
 ---
 
@@ -290,7 +227,7 @@ brew install --cask \
   - Adguard (enable all)
   - Bitwarden
 - **Firefox**
-  - Install 🍺 `brew install --cask firefox`
+  - Install from https://www.mozilla.org/en-US/firefox/new/
   - Set as default browser
   - **General**
   - Browsing - Turn ❌ "Recommend extensions as you browse" also "Recommend features as you browse"
@@ -320,7 +257,7 @@ brew install --cask \
   - [StartPage](https://addons.mozilla.org/es/firefox/addon/startpage-private-search/?src=external-marketing-pages)
   - [I don't care about cookies](https://addons.mozilla.org/es/firefox/addon/i-dont-care-about-cookies/)
 - **Iterm2**
-  - Install 🍺 `brew install iterm2`
+  - Install from https://iterm2.com/
   - **ZSH**
   - Setup zsh see in 📁 [docs](https://github.com/ivoarch/.dotfiles/blob/main/docs/Zsh.md)
   - **Dracula theme**
@@ -331,8 +268,8 @@ brew install --cask \
     - 3 Select **Import...** from the list
     - 4 Select the **Dracula.itermcolors** file
     - 5 Select the **Dracula** from **Color Presets**...
-  - **Fira Fonts**
-  - Install 🍺 `brew tap homebrew/cask-fonts && brew install --cask font-fira-code`
+  - **Fira Code**
+  - Install from https://github.com/tonsky/FiraCode
 - **Mullvad VPN**
   - **Advanced settings**
   - Turn ✅ "Always require VPN"
@@ -361,3 +298,12 @@ brew install --cask \
 - **Tutanota**
   - **Settings > Desktop**
   - Turn ✅ Offline storage
+- **Bitwarden**
+  - **Preferences**
+  - **Security**
+  - Turn ✅ Unlock with touchID
+  - **Preferences**
+  - Turn ✅ Clear clipboard 1 minute
+  - Turn ✅ Minimise when copying to clipboard
+  - **App Settings**
+  - Turn ✅ Enable browser integration
