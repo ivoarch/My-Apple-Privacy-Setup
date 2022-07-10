@@ -4,6 +4,35 @@
 
 https://support.apple.com/guide/mac-help/erase-and-reinstall-macos-mh27903/mac
 
+# 👥 Setting up users and groups
+
+See in [System preferences](https://github.com/ivoarch/.my-macbook-setup#%EF%B8%8F-system-preferences) > Users and Groups
+
+# # Add a Standard User to sudoers
+
+```
+su <ADMIN_ACCOUNT>
+sudo visudo /etc/sudoers.d/sudoers
+
+#
+# Sample /etc/sudoers file.
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# See the sudoers man page for the details on how to write a sudoers file.
+
+##
+# Override built-in defaults
+##
+# User specification
+##
+
+# root and users in group wheel can run anything on any machine as any user
+root            ALL = (ALL) ALL
+%admin          ALL = (ALL) ALL
+standartuser    ALL = (ALL) ALL
+```
+
 # 🖥 Setting up computer name
 
 ## Setting up computer name, hostname
@@ -88,8 +117,6 @@ sudo port -v install \
 - [VLC](https://www.videolan.org/) - free and open source cross-platform multimedia player .
 - [Vorta](https://vorta.borgbase.com/) - is a backup client for macOS and Linux desktops .
 - [Tiddle desktop](https://github.com/TiddlyWiki/TiddlyDesktop) - special purpose web browser for working with locally stored TiddlyWikis .
-
-To install Vorta check in 📁 [docs](https://github.com/ivoarch/.dotfiles/blob/main/docs/Vorta.md)
 
 ## 🛡️ Security tools
 
