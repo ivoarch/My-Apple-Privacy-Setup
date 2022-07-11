@@ -338,3 +338,15 @@ sudo port -v install \
   - Turn ✅ Minimise when copying to clipboard
   - **App Settings**
   - Turn ✅ Enable browser integration
+- **Keka**
+  - Turn ✅ Exclude Mac Resource forks
+  - **Preferences**
+  - **Compression**
+  - Turn ✅ Exclude Mac Resource forks
+  - Turn ✅ Use AES-256 when encrypting ZIP files
+  - **Extraction**
+  - Turn ✅ Exclude Mac Resource forks
+  - **Finder Extension**
+  - Turn ✅ Show Keka actions in Finder`s contexual menu
+  - Turn ✅ Show compress contents of folder itemsTurn
+  - Turn ❌ other options
