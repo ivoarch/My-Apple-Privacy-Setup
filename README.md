@@ -77,6 +77,12 @@ chmod +x Miniforge3-MacOSX-arm64.sh
 ./Miniforge3-MacOSX-arm64.sh
 ```
 
+To disable auto activation of conda base environment in terminal run:
+
+```
+conda config --set auto_activate_base false
+```
+
 ## Development tools
 
 - [Android file transfer](https://www.android.com/filetransfer/) - Transfer files between your Mac and your Android device
@@ -223,8 +229,6 @@ sudo port -v install \
   - Remove unused tags
   - **Sidebar**
   - Turn ❌ "Cloud Storage", "Bonjour Computers"
-  - Show all Filename Extensions
-  - Remove Items from Bin after 30 Days
   - **Toolbar**
   - Right click on toolbar and select "New Folder" icon
   - **Advanced**
