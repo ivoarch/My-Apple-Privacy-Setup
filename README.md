@@ -211,9 +211,25 @@ sudo port -v install \
   - Turn ✅ "FileVault"
   - **Firewall**
   - Turn ✅ "Firewall"
-  - Turn ❌ "Blcok all incoming connections"
+  - **Firewall Options**
+  - Turn ✅ "Blcok all incoming connections"
   - **Privacy**
-  - Set default privacy settings for apps
+  - **Location Services**
+  - Turn ✅ Only for "Find My"
+  - Turn ❌ everything else
+  - Go to Sistem Services > Details > Turn ✅ "Find My", Turn ✅ Show location icon on menu bar .
+  - **Camera**
+  - Turn ❌
+  - **Microphone**
+  - Turn ❌
+  - **Full Disk Acces**
+  - Turn ✅ Vorta
+  - Turn ✅ KnockKnock
+  - Turn ❌ everything else
+  - **Apple Advertising**
+  - Turn ❌ Personalised Ads
+  - **Analitycs and Improvements**
+  - Turn ❌ everything
 
 ---
 
