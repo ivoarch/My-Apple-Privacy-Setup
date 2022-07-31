@@ -145,6 +145,7 @@ sudo port -v install \
   - Use dark menu bar and dock
   - Turn ✅ "Ask to keep changes when closing documents"
   - Turn ✅ "Close windows when quitting an app"
+  - Turn ❌ "Allow handoff between this Mac and your iCloud devices"
 - **Dock**
   - Remove unused apps add only favorites to Dock
   - Turn ❌ "Show recent applications in Dock"
