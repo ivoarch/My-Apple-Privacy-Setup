@@ -1,4 +1,4 @@
-# **My iOS Privacy Setup Guide**
+# My iOS Privacy Setup Guide
 
 ## ℹ️ This guide assumes the device📱is factory reset.
 
@@ -17,8 +17,6 @@
 > Do not plug your device into unknown ports (use USB data blocker when plug in your device into unknown ports).
 
 > Never leave your device unattended.
-
-===
 
 ## 📦 Apps
 
@@ -41,8 +39,6 @@
 **RSS** - NetNewsWire
 
 **Communication** - Signal, Telegram
-
-===
 
 ## ⚙️ Settings
 

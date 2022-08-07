@@ -1,4 +1,4 @@
-# My Apple Watch **Privacy Setup Guide**
+# My Apple Watch Privacy Setup Guide
 
 ## ⚙️ Settings
 
