@@ -192,19 +192,11 @@ sudo port -v install \
 - **Mission Control**
   - **Hot Corners**
   - Turn ❌ all
-- **🕖 📅 Date & Time**
-  - **Date & Time**
-  - Set Cloudflare time https://www.cloudflare.com/time/
-  - Turn ✅ "date and time automatically", enter `time.cloudflare.com`
 - ** Apple ID**
   - **iCloud**
   - Turn ✅ "Hide My Email"
 - **🔗 Sharing**
   - Make sure only you want for sharing is enabled
-- **🌐 Network**
-  - **Advanced** > **DNS**
-  - Set the DNS servers to use [Cloudflare for Families](https://blog.cloudflare.com/introducing-1-1-1-1-for-families/)
-  - Set to use `1.1.1.3`, `1.0.0.3` to block malware and adult-related content.
 - **🛡️ Security and Privacy settings**
   - **General**
   - Set Require Password to immediately
@@ -324,7 +316,7 @@ sudo port -v install \
   - Tunel Protocol set ✅ "WireGuard"
   - Wireguard settings > Turn ✅ "Enable multihop"
   - **Preferences**
-  - Turn ✅ Everything
+  - Turn ✅ Everything (DNS. Kill Switch etc...)
   - Turn ❌ "Beta Program"
 - **Lulu Firewall**
   - **First start**
