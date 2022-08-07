@@ -144,7 +144,7 @@
 - **Tracking**
 - Disable ❌ the option "Allow Apps to Request to Track".
 
-# 📦 **App Store**
+📦 **App Store**
 
 - Turn ✅ "App Updates".
 - Turn ❌ "In-App Ratings & Reviews".
@@ -155,7 +155,7 @@
 
 - Turn ✅ AutoFill Passwords - only for Bitwarden
 
-## 📧 **Mail**
+📧 **Mail**
 
 - **Privacy Protection**
 - Turn ✅ "Protect Mail Activity"
