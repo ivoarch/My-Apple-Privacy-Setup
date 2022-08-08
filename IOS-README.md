@@ -53,21 +53,21 @@
 
 ---
 
-ᯤ **Wifi**
+**ᯤ Wifi**
 
 - Disable ❌ "Ask to join Networks" - Off
 - Disable ❌ "Auto-Join Hotspot" - Never
 
-🛰️ **Bluetooth**
+**🛰️ Bluetooth**
 
 - Disable ❌ (If not used-preferred)
 
-📶 **Mobile Data**
+**📶 Mobile Data**
 
 - Disable ❌ "Calls on Other Devices" - Off
 - SIM PIN - Enable ✅ (Set a custom PIN) .
 
-🖇️ **Personal Hotspot**
+**🖇️ Personal Hotspot**
 
 - Choose a Wi-Fi password that's at least eight characters long and use ASCII characters .
 
@@ -85,7 +85,7 @@
 - **Siri**
 - Desable ❌ "Siri Suggestions".
 
-⌛ **Screen Time**
+**⌛ Screen Time**
 
 - In the prompt, select “Turn Off Screen Time” .
 
@@ -117,7 +117,7 @@
 
 - Disable ❌ all of the Siri Suggestion options
 
-👁 **Face ID & Passcode**
+**👁 Face ID & Passcode**
 
 - Turn ✅ FaceID for Everything
 - Turn ✅ "Require Attention for Face ID".
@@ -144,23 +144,23 @@
 - **Tracking**
 - Disable ❌ the option "Allow Apps to Request to Track".
 
-📦 **App Store**
+**📦 App Store**
 
 - Turn ✅ "App Updates".
 - Turn ❌ "In-App Ratings & Reviews".
 - Turn ❌ "Video Autoplay".
 - Turn ✅ "Offload unused Apps".
 
-🔑 **Passwords**
+**🔑 Passwords**
 
 - Turn ✅ AutoFill Passwords - only for Bitwarden
 
-📧 **Mail**
+**📧 Mail**
 
 - **Privacy Protection**
 - Turn ✅ "Protect Mail Activity"
 
-✉️ **Messages**
+**✉️ Messages**
 
 - Disable ❌ "Send as SMS"
 - Disabale ❌ "Share Name and Photo"
@@ -176,11 +176,9 @@
 - Disable ❌ "Use Contact info"
 - Disable ❌ "Credit Cards"
 - Disable ❌ "Block Pop-ups"
-- Extensions
+- 🧩 Extensions
 - Content Blockers:
-
-Enable ✅ in Mullvad App to block Ad, Trackers, Malware.
-
+- Enable ✅ in Mullvad App to block Ad, Trackers, Malware.
 - Downloads
 - Store downloaded files on : On my iPhone > Downloads
 - **Settings for Websites**

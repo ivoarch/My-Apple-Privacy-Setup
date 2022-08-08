@@ -1,5 +1,9 @@
 # My Apple Watch Privacy Setup Guide
 
+# 📦 Apps
+
+- **2FA** - OTP Auth
+
 ## ⚙️ Settings
 
 **🔔 Notifications**

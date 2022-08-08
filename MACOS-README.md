@@ -191,7 +191,7 @@ sudo port -v install \
   - Turn ✅ Spotlight only for Applications , PDF Documents, System Preferences
 - **Mission Control**
   - **Hot Corners**
-  - Turn ❌ all
+  - Activate ✅ Botton Screen Corner to show -> Desktop
 - ** Apple ID**
   - **iCloud**
   - Turn ✅ "Hide My Email"
