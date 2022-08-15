@@ -285,6 +285,8 @@ sudo port -v install \
   - History -> Custom Settings -> Select ✅ Clear history when Firefox closes
   - Address Bar -> When using the address bar, suggest -> Turn ❌ everything
   - Permissions - Setting permissions
+  - Select ✅ "Block pop-up windows"
+  - Select ✅ "Warn you when website try to add-on"
   - Firefox Data Collection and Use - Turn ❌ everything
   - Deceptive Content and Dangerous Software Protection - Select ✅ everything
     HTTPS-Only Mode - Select ✅ "HTTPS-Only Mode in all windows"
@@ -295,7 +297,6 @@ sudo port -v install \
   - [Bitwarden](https://addons.mozilla.org/es/firefox/addon/bitwarden-password-manager/)
   - [Ublock origin](https://ublockorigin.com/)
   - [StartPage](https://addons.mozilla.org/es/firefox/addon/startpage-private-search/?src=external-marketing-pages)
-  - [Cookie Quick Manager](https://addons.mozilla.org/en-US/firefox/addon/cookie-quick-manager/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
 - **Iterm2**
   - Install from https://iterm2.com/
   - **ZSH**
