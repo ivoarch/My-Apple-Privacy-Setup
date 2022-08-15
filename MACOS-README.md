@@ -308,7 +308,7 @@ sudo port -v install \
     - 3 Select **Import...** from the list
     - 4 Select the **Dracula.itermcolors** file
     - 5 Select the **Dracula** from **Color Presets**...
-  - **Make Iterm DropDown terminal (Quake mode)**
+  - **Make Iterm2 DropDown terminal (Quake mode)**
   - 1 iTerm2 > Preferences > **Profile** > New profile > Quake > Set as Default
   - 2 Preferences > **Keys** > Hotkey and check the Show/hide all windows with a system-wide hotkey checbox and choose your hotkey combination.
   - 3 Preferences > **Profiles** > Window tab and set Style to Full-Width Top of Screen and Screen to Screen with Cursor.
