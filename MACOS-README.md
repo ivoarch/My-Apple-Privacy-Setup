@@ -263,10 +263,7 @@ sudo port -v install \
   - Turn ✅ Prevent cross-site tracking (This should be checked by default.)
   - Turn ✅ Hide IP address from trackers
   - Turn ❌ websites to check for Apple Pay & Apple Card
-  - **🧩 Extensions**
-  - Adguard (enable all)
-  - Bitwarden
-- **Firefox**
+  - **Firefox**
   - Install from https://www.mozilla.org/en-US/firefox/new/
   - Set as default browser
   - **General**
