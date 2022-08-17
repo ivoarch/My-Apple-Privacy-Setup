@@ -171,7 +171,7 @@ sudo port -v install \
   - Setup administrator account (don´t name Admin! use other name) .
   - Create a second standart account (regulate user for every day tasks) . Name this account Admin .
 - **🔔 Notifications**
-  - Turn ❌, "Except for App Store, Calendar, FaceTime, Mail, Messages, Reminder, Safari, Telegram"
+  - Turn ❌, "Except for App Store, Mail, Tutanota, Firefox, Mullvad, Telegram, Keka, Micro Snitch, Vorta"
 - **🗣️ Siri**
   - Disable
 - **💻🖱️ Trackpad**
