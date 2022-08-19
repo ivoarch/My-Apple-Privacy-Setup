@@ -143,86 +143,86 @@ sudo port -v install \
 
 - **🛠️ Generel**
   - Use dark menu bar and dock
-  - Turn ✅ "Ask to keep changes when closing documents"
-  - Turn ✅ "Close windows when quitting an app"
-  - Turn ❌ "Allow handoff between this Mac and your iCloud devices"
+  - ✅ "Ask to keep changes when closing documents".
+  - ✅ "Close windows when quitting an app".
+  - ❌ "Allow handoff between this Mac and your iCloud devices".
 - **Dock**
   - Remove unused apps add only favorites to Dock
-  - Turn ❌ "Show recent applications in Dock"
-  - Turn ✅ "Minimize windows into their application’s icon"
-  - Turn ✅ "Show indicators for open applications"
-  - Set dock size to "50"
+  - ❌ "Show recent applications in Dock".
+  - ✅ "Minimize windows into their application’s icon".
+  - ✅ "Show indicators for open applications".
+  - Set dock size to "50".
   - `defaults write com.apple.dock tilesize -int 50; killall Dock`
 - **♿ Accessibility**
-  - Turn ✅ "Three finger drag"
-  - Turn ✅ "Use scroll gesture with modifier keys to zoom"
+  - ✅ "Three finger drag".
+  - ✅ "Use scroll gesture with modifier keys to zoom".
 - **🔋 Battery**
-  - Turn ✅ "Baterry Show Percentage"
+  - ✅ "Baterry Show Percentage".
 - **🖥 Display**
-  - Turn ✅ "Nightshift"
-  - Schedule "Sunset to Sunrise"
+  - ✅ "Nightshift".
+  - Schedule "Sunset to Sunrise".
 - **👆 Touch ID**
-  - Click the “+ Add a fingerprint” to add a new fingerprint
-  - Turn ✅ for everything
+  - Click the "+ Add a fingerprint" to add a new fingerprint
+  - ✅ for Everything
 - **📦 Software Updates**
-  - Turn ✅ "Automatically check for updates"
+  - ✅ "Automatically check for updates".
   - Install updates
 - **👥 Users and Groups**
   - Setup administrator account (don´t name Admin! use other name) .
   - Create a second standart account (regulate user for every day tasks) . Name this account Admin .
 - **🔔 Notifications**
-  - Turn ❌, "Except for App Store, Mail, Tutanota, Firefox, Mullvad, Telegram, Keka, Micro Snitch, Vorta"
+  - ❌ "Except for App Store, Mail, Tutanota, Firefox, Mullvad, Telegram, Keka, Micro Snitch, Vorta"
 - **🗣️ Siri**
-  - Disable
+  - ❌
 - **💻🖱️ Trackpad**
-  - Turn ✅ "Tap to Click"
+  - ✅ "Tap to Click".
   - Ingrease the cursor speed
 - **🧩 Extension**
-  - Turn ❌ unecessary extensions
+  - ❌ unecessary extensions
 - **⌨️ Keyboard**
   - **Text**
-  - Turn ❌ "Add full stop with double-space"
-  - Turn ❌ "Use smart quotes and dashes"
+  - ❌ "Add full stop with double-space".
+  - ❌ "Use smart quotes and dashes".
   - use " for double quotes
   - use ' for single quotes
   - **Sources**
   - Add Bulgarian layout
 - **🔍 Spotlight**
-  - Turn ✅ Spotlight only for Applications , PDF Documents, System Preferences
+  - ✅ Spotlight only for Applications , PDF Documents, System Preferences
 - **Mission Control**
   - **Hot Corners**
   - Activate ✅ Botton Screen Corner to show -> Desktop
 - ** Apple ID**
   - **iCloud**
-  - Turn ✅ "Hide My Email"
+  - ✅ "Hide My Email"
 - **🔗 Sharing**
   - Make sure only you want for sharing is enabled
 - **🛡️ Security and Privacy settings**
   - **General**
   - Set Require Password to immediately
   - **FileVault**
-  - Turn ✅ "FileVault"
+  - ✅ "FileVault".
   - **Firewall**
-  - Turn ✅ "Firewall"
+  - ✅ "Firewall".
   - **Firewall Options**
-  - Turn ✅ "Blcok all incoming connections"
+  - ✅ "Blcok all incoming connections".
   - **Privacy**
   - **Location Services**
-  - Turn ✅ Only for "Find My"
-  - Turn ❌ everything else
-  - Go to Sistem Services > Details > Turn ✅ "Find My", Turn ✅ Show location icon on menu bar .
+  - ✅ Only for "Find My"
+  - ❌ everything else
+  - Go to Sistem Services > Details > ✅ "Find My", ✅ Show location icon on menu bar .
   - **Camera**
-  - Turn ❌
+  - ❌
   - **Microphone**
-  - Turn ❌
+  - ❌
   - **Full Disk Acces**
-  - Turn ✅ Vorta
-  - Turn ✅ KnockKnock
-  - Turn ❌ everything else
+  - ✅ Vorta
+  - ✅ KnockKnock
+  - ❌ everything else
   - **Apple Advertising**
-  - Turn ❌ Personalised Ads
+  - ❌ Personalised Ads
   - **Analitycs and Improvements**
-  - Turn ❌ everything
+  - ❌ everything
 
 ---
 
@@ -230,44 +230,44 @@ sudo port -v install \
 
 - **Finder**
   - **General**
-  - Turn ❌ to show hard disks on desktop
-  - Turn ❌ to show connecting servers
+  - ❌ to show hard disks on desktop.
+  - ❌ to show connecting servers.
   - Setup to open new windows in `$HOME` user directory
   - **Tags**
   - Create custom Tags - Work 🟢, Important 🔴, Curses 🔵
   - Remove unused tags
   - **Sidebar**
-  - Turn ❌ "Cloud Storage", "Bonjour Computers"
+  - ❌ "Cloud Storage", "Bonjour Computers"
   - **Toolbar**
   - Right click on toolbar and select "New Folder" icon
   - **Advanced**
-  - Turn ✅ all options
+  - ✅ all options
   - Setup search in directory actual
   - **View**
-  - Turn ✅ to show path bar
-  - Turn ✅ to show status bar
-  - Show View Options (or press `Command+J`) > Turn ✅ Show Library Folder
+  - ✅ to show path bar
+  - ✅ to show status bar
+  - Show View Options (or press `Command+J`) > ✅ Show Library Folder
 - **Safari**
   - **General**
   - Setup "https://www.startpage.com/" as a start page
-  - Turn ❌ "Auto Open Safe Download"
+  - ❌ "Auto Open Safe Download".
   - **AutoFill**
-  - Turn ❌ everything
+  - ❌ Everything
   - **Passwords**
-  - Turn ❌ ,I don't use
+  - ❌ ,I don't use
   - **Search**
   - Add [DuckDuckGo](https://duckduckgo.com/) as a default search engine
-  - Turn ❌ Safari Suggestions
-  - Turn ❌ show favorites
+  - ❌ Safari Suggestions
+  - ❌ show favorites
   - **Privacy**
-  - Turn ✅ Prevent cross-site tracking (This should be checked by default.)
-  - Turn ✅ Hide IP address from trackers
-  - Turn ❌ websites to check for Apple Pay & Apple Card
+  - ✅ Prevent cross-site tracking (This should be checked by default.)
+  - ✅ Hide IP address from trackers
+  - ❌ websites to check for Apple Pay & Apple Card
   - **Firefox**
   - Install from https://www.mozilla.org/en-US/firefox/new/
   - Set as default browser
   - **General**
-  - Browsing - Turn ❌ "Recommend extensions as you browse" also "Recommend features as you browse"
+  - Browsing - ❌ "Recommend extensions as you browse" also "Recommend features as you browse"
   - **Home**
   - Home page and new windows - Select ✅ Custom Urls -> https://www.startpage.com -> New Tabs -> Firefox Home (Default)
   - Recent activity - Turn ❌ everything
@@ -316,16 +316,16 @@ sudo port -v install \
   - Install from https://github.com/tonsky/FiraCode
 - **Mullvad VPN**
   - **Advanced settings**
-  - Turn ✅ "Always require VPN"
+  - ✅ "Always require VPN"
   - Tunel Protocol set ✅ "WireGuard"
-  - Wireguard settings > Turn ✅ "Enable multihop"
+  - Wireguard settings > ✅ "Enable multihop"
   - **Preferences**
-  - Turn ✅ Everything (DNS. Kill Switch etc...)
-  - Turn ❌ "Beta Program"
+  - ✅ Everything (DNS. Kill Switch etc...).
+  - ❌ "Beta Program"
 - **Lulu Firewall**
   - **First start**
-  - Turn ❌ "Allow Apple Programs"
-  - Turn ❌ "Allow Already Installed Applications"
+  - ❌ "Allow Apple Programs".
+  - ❌ "Allow Already Installed Applications".
 - **Visual studio Code**
   - **🧩 Extensions**
   - [Docker](https://marketplace.visualstudio.com/itemsitemName=ms-azuretools.vscode-docker)
@@ -341,25 +341,25 @@ sudo port -v install \
   - View settings [here](https://github.com/ivoarch/.my-macbook-setup/blob/main/vscode/settings.json) .
 - **Tutanota**
   - **Settings > Desktop**
-  - Turn ✅ Offline storage
+  - ✅ "Offline storage".
 - **Bitwarden**
   - **Preferences**
   - **Security**
-  - Turn ✅ Unlock with touchID
+  - ✅ "Unlock with touchID".
   - **Preferences**
-  - Turn ✅ Clear clipboard 1 minute
-  - Turn ✅ Minimise when copying to clipboard
+  - ✅ "Clear clipboard 1 minute".
+  - ✅ Minimise when copying to clipboard".
   - **App Settings**
-  - Turn ✅ Enable browser integration
+  - ✅ "Enable browser integration".
 - **Keka**
-  - Turn ✅ Exclude Mac Resource forks
+  - ✅ "Exclude Mac Resource forks".
   - **Preferences**
   - **Compression**
-  - Turn ✅ Exclude Mac Resource forks
-  - Turn ✅ Use AES-256 when encrypting ZIP files
+  - ✅ "Exclude Mac Resource forks".
+  - ✅ "Use AES-256 when encrypting ZIP files".
   - **Extraction**
-  - Turn ✅ Exclude Mac Resource forks
+  - ✅ "Exclude Mac Resource forks".
   - **Finder Extension**
-  - Turn ✅ Show Keka actions in Finder`s contexual menu
-  - Turn ✅ Show compress contents of folder itemsTurn
-  - Turn ❌ other options
+  - ✅ "Show Keka actions in Finder`s contexual menu".
+  - ✅ "Show compress contents of folder itemsTurn".
+  - ❌ other options
