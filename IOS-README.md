@@ -1,8 +1,8 @@
-# My iOS Privacy Setup Guide
+# **My iOS Privacy Setup Guide**
 
-## ℹ️ This guide assumes the device📱is factory reset.
+ℹ️ This guide assumes the device📱is factory reset.
 
-## 📝 **Practices to follow:**
+## 📝 Practices to follow
 
 > Secure device with strong password .
 
@@ -53,21 +53,21 @@
 
 ---
 
-**ᯤ Wifi**
+ᯤ **Wifi**
 
-- Disable ❌ "Ask to join Networks" - Off
-- Disable ❌ "Auto-Join Hotspot" - Never
+- ❌ "Ask to join Networks" - Off
+- ❌ "Auto-Join Hotspot" - Never
 
-**🛰️ Bluetooth**
+🛰️ **Bluetooth**
 
-- Disable ❌ (If not used-preferred)
+- ❌ (If not used-preferred)
 
-**📶 Mobile Data**
+📶 **Mobile Data**
 
-- Disable ❌ "Calls on Other Devices" - Off
+- ❌ "Calls on Other Devices"
 - SIM PIN - Enable ✅ (Set a custom PIN) .
 
-**🖇️ Personal Hotspot**
+🖇️ **Personal Hotspot**
 
 - Choose a Wi-Fi password that's at least eight characters long and use ASCII characters .
 
@@ -79,120 +79,152 @@
 
 **🔔 Notifications**
 
-- Show Previews - Never
-- Screen Sharing - Notifications Off
-- Disable ❌ notifications for any apps you do not necessarily need it .
+- ❌ "Show Previews".
+- ❌ "Screen Sharing".
+- ❌ notifications for any apps you do not necessarily need it .
 - **Siri**
-- Desable ❌ "Siri Suggestions".
+- ❌ "Siri Suggestions".
 
-**⌛ Screen Time**
+⌛ **Screen Time**
 
-- In the prompt, select “Turn Off Screen Time” .
+- ❌ "Turn Off Screen Time".
 
 ---
 
 **🛠️ Generel**
 
 - **Software Update**
-- Turn ✅ "Automatic Updates"
+- ✅ "Automatic Updates".
 - **AirDrop**
-- Receiving - ❌
+- ❌ "Receiving"
 - **AirPlay & Handoff**
-- Automatically AirPlay to TVs - Never ❌
-- Tranfer to HomePod - Turn ❌
-- Handoff - Turn ❌
+- ❌ "Automatically AirPlay to TVs".
+- ❌ "Tranfer to HomePod".
+- ❌ "Handoff".
 - **Picture in Picture**
-- Start PiP Automatically -Turn ✅
+- ✅ "Start PiP Automatically".
 - **Background App Refresh**
-- Disable ❌ this for any apps you do not necessarily need it for .
+- ❌ for any apps you do not necessarily need it for .
+
+**📱Display & Brightness**
+
+- ❌ "Raise to Wake"
+
+**🌄 Wallpaper**
+
+- Don't use any sensitive images, like pictures of my family .
 
 **⌨️ Keyboard**
 
-- Disable ❌ "Check Spelling".
-- Disable ❌ "Predective".
-- Disable ❌ "Smart Puntuation".
-- Disable ❌ "Enable Dictation".
+- ❌ "Check Spelling".
+- ❌ "Predective".
+- ❌ "Smart Puntuation".
+- ❌ "Enable Dictation".
 
 **🗣️ Siri & Search**
 
-- Disable ❌ all of the Siri Suggestion options
+- ❌ all of the Siri Suggestion options
 
-**👁 Face ID & Passcode**
+👁 **Face ID & Passcode**
 
-- Turn ✅ FaceID for Everything
-- Turn ✅ "Require Attention for Face ID".
-- Turn "Attention Aware Feuture".
+- ✅ FaceID for Everything
+- ✅ "Require Attention for Face ID".
+- ✅ "Attention Aware Feuture".
 - Passcode - minimum 8 caracteres .
 - Requiere Passcode - Immediately .
-- Disable ❌ access for everything when locked .
-- Turn ✅ Erase Data (This will wipe your phone after more than 10 failed passcode attempt) I recommend you make frequent backups if you enable this.
+- ❌ access for everything when locked .
+- ✅ Erase Data (This will wipe your phone after more than 10 failed passcode attempt).
 
 **🛡️ Privacy**
 
+- Review all the other app settings and make sure apps only have access to the settings they actually need. Otherwise, disable them. Disable as many as you can without breaking the app functionality.
 - **Location Services**
-- Disable location for any apps you do not use!
-- If an app you use does require location, enable 'While Using the App' so it's not using it in the background.
+- ❌ Location for any apps you do not use!
+- If an app you use does require location, ✅ 'While Using the App' so it's not using it in the background.
 - **System Services**
-- Disable ❌ "Homekit".
-- Disable ❌ "Location-Based Alerts".
-- Disable ❌ "Location-Based Suggestions".
-- Disable ❌ "Share My Location".
-- Disable ❌ "Significant Locations".
-- Disable ❌ "Product Improvement".
-- Disable ❌ "iPhone Analitycs".
-- Disable ❌ "Routing & Trafic".
+- ❌ "Homekit".
+- ❌ "Location-Based Alerts".
+- ❌ "Location-Based Suggestions".
+- ❌ "Share My Location".
+- ❌ "Significant Locations".
+- ❌ "Product Improvement".
+- ❌ "iPhone Analitycs".
+- ❌ "Routing & Trafic".
 - **Tracking**
-- Disable ❌ the option "Allow Apps to Request to Track".
+- ❌ Allow Apps to Request to Track".
+- **Analytics & Improvements**
+- ❌ "Share iPhone Analytics".
+- ❌ "Apple Advertising".
 
-**📦 App Store**
+---
 
-- Turn ✅ "App Updates".
-- Turn ❌ "In-App Ratings & Reviews".
-- Turn ❌ "Video Autoplay".
-- Turn ✅ "Offload unused Apps".
+📦 **App Store**
 
-**🔑 Passwords**
+- ✅ "App Updates".
+- ❌ "In-App Ratings & Reviews".
+- ❌ "Video Autoplay".
+- ✅ "Offload unused Apps".
+- **Privacy**
+- Personalized Recommendations > "Clear App Usage Data".
 
-- Turn ✅ AutoFill Passwords - only for Bitwarden
+💳 **Wallet & Apple Pay**
 
-**📧 Mail**
+- TODO ❌ Everything
+
+---
+
+🔑 **Passwords**
+
+- ✅ AutoFill Passwords - (only for Bitwarden)
+
+📧 **Mail**
 
 - **Privacy Protection**
-- Turn ✅ "Protect Mail Activity"
+- ✅ "Protect Mail Activity"
 
-**✉️ Messages**
+✉️ **Messages**
 
-- Disable ❌ "Send as SMS"
-- Disabale ❌ "Share Name and Photo"
-- Turn Filter Uknown Senders
+- ❌ "Send as SMS".
+- ❌ "Share Name and Photo".
+- ✅ "Filter Uknown Senders".
+
+📳 **Phone**
+
+- ✅ "Silence unknown callers".
 
 **🌐 Safari**
 
-- Search Engine: Use DuckDuckGo or setup StartPage
-- Disable ❌ "Safari Suggestions"
-- Disable ❌ "Preload Top Hit" so websites aren't automatically loaded without your knowledge.
+- Search Engine: Use DuckDuckGo or setup StartPage.
+- ❌ "Safari Suggestions"
+- ❌ "Preload Top Hit" so websites aren't automatically loaded without your knowledge.
 - **General**
 - AutoFill
-- Disable ❌ "Use Contact info"
-- Disable ❌ "Credit Cards"
-- Disable ❌ "Block Pop-ups"
-- 🧩 Extensions
+- ❌ "Use Contact info"
+- ❌ "Credit Cards"
+- ❌ "Block Pop-ups"
+- Extensions
 - Content Blockers:
-- Enable ✅ in Mullvad App to block Ad, Trackers, Malware.
+
+✅ in Mullvad App to block Ad, Trackers, Malware.
+
 - Downloads
 - Store downloaded files on : On my iPhone > Downloads
 - **Settings for Websites**
-- Turn ✅ "Content Blockers" All Websites
-- Disable ❌ "Camera" Deny
-- Disable ❌ "Microphone" Deny
-- Disable ❌ "Location" Deny
+- ✅ "Content Blockers" All Websites
+- ❌ "Camera" Deny
+- ❌ "Microphone" Deny
+- ❌ "Location" Deny
 - **Privacy & Security**
-- Turn ✅ "Prevent Cross-Site Tracking"
-- Turn ✅ "Hide IP Adress" from Trackers .
-- Turn ✅ "Fraudulent Website Warning"
-- Disable ❌ "Privacy Preserving Ad Measurement"
+- ✅ "Prevent Cross-Site Tracking".
+- ✅ "Hide IP Adress" from Trackers .
+- ✅ "Fraudulent Website Warning".
+- ❌ "Privacy Preserving Ad Measurement".
+
+---
 
 **Acknowledgements:**
+
+[https://thenewoil.org/mobile-settings.html](https://thenewoil.org/mobile-settings.html)
 
 [https://www.reddit.com/r/privacy/](https://www.reddit.com/r/privacy/)
 
@@ -206,6 +238,6 @@
 
 [https://github.com/paulaime/iOS-Privacy-Guide](https://github.com/paulaime/iOS-Privacy-Guide)
 
-[https://github.com/harleo/iOSPriSec#21-name-phone-numbers-email](https://github.com/harleo/iOSPriSec#21-name-phone-numbers-email)
+[https://github.com/harleo/iOSPriSec](https://github.com/harleo/iOSPriSec)
 
 [https://github.com/newsommr/iOS-Security-and-Privacy-Guide](https://github.com/newsommr/iOS-Security-and-Privacy-Guide)
