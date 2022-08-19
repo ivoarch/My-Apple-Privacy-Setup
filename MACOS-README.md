@@ -263,7 +263,7 @@ sudo port -v install \
   - ✅ Prevent cross-site tracking (This should be checked by default.)
   - ✅ Hide IP address from trackers
   - ❌ websites to check for Apple Pay & Apple Card
-  - **Firefox**
+- **Firefox**
   - Install from https://www.mozilla.org/en-US/firefox/new/
   - Set as default browser
   - **General**
