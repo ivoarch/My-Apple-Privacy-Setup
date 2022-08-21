@@ -362,3 +362,14 @@ sudo port -v install \
   - ✅ "Show Keka actions in Finder`s contexual menu".
   - ✅ "Show compress contents of folder itemsTurn".
   - ❌ other options
+- **VLC**
+  - **Make VLC default player**
+  1. Go to the video or audio file you wish to open then `right-click` it. To `right-click` on a Mac, press `Control`, then the mouse or trackpad.
+  2. Choose "Get Info."
+  3. Select "Open with."
+  4. Change the current player to VLC.
+  5. Click on the "Change All…" option, then select "Continue" from the prompt that pops up.
+  - **Preferences > Interface**
+  - Interface style , select ✅ "Dark".
+  - **Subtitles/OSD**
+  - Default econcoding, select ✅ "Default (Windows-1252)".
