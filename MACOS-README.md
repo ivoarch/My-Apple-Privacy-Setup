@@ -372,4 +372,4 @@ sudo port -v install \
   - **Preferences > Interface**
   - Interface style , select ✅ "Dark".
   - **Subtitles/OSD**
-  - Default econcoding, select ✅ "Default (Windows-1252)".
+  - Default econcoding, select ✅ "Cyrillic (Windows-1252)".
