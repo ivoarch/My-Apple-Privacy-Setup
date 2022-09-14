@@ -94,7 +94,7 @@
 **🛠️ Generel**
 
 - **Software Update**
-- ✅ "Automatic Updates".
+- ✅ "Automatic Updates" -> Enable Everything.
 - **AirDrop**
 - ❌ "Receiving"
 - **AirPlay & Handoff**
@@ -135,7 +135,7 @@
 - ❌ access for everything when locked .
 - ✅ Erase Data (This will wipe your phone after more than 10 failed passcode attempt).
 
-**🛡️ Privacy**
+**🛡️ Privacy & Security**
 
 - Review all the other app settings and make sure apps only have access to the settings they actually need. Otherwise, disable them. Disable as many as you can without breaking the app functionality.
 - **Location Services**
@@ -152,9 +152,15 @@
 - ❌ "Routing & Trafic".
 - **Tracking**
 - ❌ Allow Apps to Request to Track".
+- **Safety Check**
+- For the moment i don't need this ...
 - **Analytics & Improvements**
-- ❌ "Share iPhone Analytics".
-- ❌ "Apple Advertising".
+- ❌ "Share iPhone & Watch Analytics".
+- ❌ "Share iCloud Analitycs".
+- ❌ "Improve Safety".
+- ❌ "Improve Siri & Dictation".
+- **Security**
+- **Lockdown Mode**
 
 ---
 
