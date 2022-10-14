@@ -14,31 +14,39 @@
 
 > Backup your data (not in iCloud).
 
-> Do not plug your device into unknown ports (use USB data blocker when plug in your device into unknown ports).
+> Do not plug your device into unknown ports (or use USB data blocker when plug in your device into unknown ports).
 
 > Never leave your device unattended.
 
 ## 📦 Apps
 
-**Browser** - Safari
+**Browser** - Safari + Extensions (Bitwarden, Privacy Redirect)
 
 **Search engine** - StartPage
 
 **Email client,** **Contacts, Calendar** - Tutanota
 
-**Password manager**\- Bitwarden
+**Password manager** - Bitwarden Premium
 
-**2FA** - OTP Auth
+**2FA** - OTP Auth + Bitwarden Premium
 
 **VPN** - Mullvad
 
 **Encrypt important data to Icloud** - Cryptomator
 
-**Secure photo storage service, and an encrypted documents editor** - Cryptee
+**Secure photo storage service, and an encrypted documents editor** - Cryptee and Criptomator Vault on Icloud
 
 **RSS** - NetNewsWire
 
 **Communication** - Signal, Telegram
+
+**Youtube** - Piped
+
+## iOS Shortcuts
+
+- **Clear Safari** (clear Safari history and date)
+
+- **Cryptomator Automatic Photo Uploud** (automatically upload photos to a Cryptomator vault.)
 
 ## ⚙️ Settings
 
