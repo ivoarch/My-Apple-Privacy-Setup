@@ -314,13 +314,16 @@ sudo port -v install \
   - **Fira Code**
   - Install from https://github.com/tonsky/FiraCode
 - **Mullvad VPN**
-  - **Advanced settings**
+  - **VPN settings**
+  - ✅ Launch app start-up
+  - ✅ Auto-connect
+  - ✅ Local network sharing
   - ✅ "Always require VPN"
+  - ✅ "Mullvad DNS to block ads, trackers, malware, gambling, adult content"
+  - ✅ "Kill switch"
+  - ✅ "Lockdown mode"
   - Tunel Protocol set ✅ "WireGuard"
-  - Wireguard settings > ✅ "Enable multihop"
-  - **Preferences**
-  - ✅ Everything (DNS. Kill Switch etc...).
-  - ❌ "Beta Program"
+  - Wireguard settings > ✅ "Port Automatic", ✅ "Obfuscation UDP over TCP" , "UDP over TCP port Automatic", ✅ "Enable multihop"
 - **Lulu Firewall**
   - **First start**
   - ❌ "Allow Apple Programs".
