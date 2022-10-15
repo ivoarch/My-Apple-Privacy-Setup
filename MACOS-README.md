@@ -274,6 +274,8 @@ sudo port -v install \
   - **Search**
   - Default Search Engine - Select ✅ Searx Belgium (see how-to in 📁 [Search-engine](https://github.com/ivoarch/My-Apple-Privacy-Setup/blob/main/docs/Search-engine.md))
   - Search Suggestions - Turn ❌ everything
+  - **Downloads**
+  - ✅ Always ask you where to save files
   - **Privacy & Security**
   - Enhanced Tracking Protection (ETP): Select ✅ "Strict"
   - Send web sites a “Do Not Track” signal that you don’t want to be tracked : Select ✅ "Always"
@@ -323,7 +325,7 @@ sudo port -v install \
   - ✅ "Kill switch"
   - ✅ "Lockdown mode"
   - Tunel Protocol set ✅ "WireGuard"
-  - Wireguard settings > ✅ "Port Automatic", ✅ "Obfuscation UDP over TCP" , "UDP over TCP port Automatic", ✅ "Enable multihop"
+  - Wireguard settings > ✅ "Port Automatic", ✅ "Obfuscation set to Automatic" , "UDP over TCP port Automatic", ✅ "Enable multihop"
 - **Lulu Firewall**
   - **First start**
   - ❌ "Allow Apple Programs".
