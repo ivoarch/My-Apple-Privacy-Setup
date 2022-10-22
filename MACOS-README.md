@@ -106,7 +106,8 @@ sudo port -v install \
   wget \
   ffmpeg \
   imagemagick \
-  pipenv
+  pipenv \
+  exiftool
 ```
 
 ## 🗂 Other applications

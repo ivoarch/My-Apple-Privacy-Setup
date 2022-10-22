@@ -175,6 +175,9 @@ alias mp4="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'"
 alias localip="ipconfig getifaddr en0"
 alias myip="curl ifconfig.me"
 
+# Removing Metadata from Files/Documents/Pictures
+alias cleanphoto="exiftool -all= $*"
+
 #### macOS Operating system specific aliases
 # Brew update
 #alias brupdate="brew update && brew upgrade && brew doctor && brew cleanup"
