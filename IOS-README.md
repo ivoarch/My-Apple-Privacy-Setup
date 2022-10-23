@@ -42,6 +42,8 @@
 
 **Youtube** - Piped
 
+**Reddit** - Slite
+
 ## iOS Shortcuts
 
 - **Clear Safari** (clear Safari history and date)
@@ -53,11 +55,12 @@
 ** AppleID**
 
 - **iCloud**
-- Disable ❌ most of the apps using the "iCloud Drive" feature unless you trust them or need the syncing ability.
-- Disable ❌ the "Look Me Up" feature
+- ❌ most of the apps using the "iCloud Drive" feature unless you trust them or need the syncing ability.
+- ❌ the "Look Me Up" feature
 - **Password & Security**
 - Make sure you have two-factor authentication ✅ for your AppleID.
 - Enable ✅ Recovery key
+- ❌ "Automatic Verification"
 
 ---
 
