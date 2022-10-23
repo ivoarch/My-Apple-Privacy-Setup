@@ -270,10 +270,10 @@ sudo port -v install \
   - **General**
   - Browsing - ❌ "Recommend extensions as you browse" also "Recommend features as you browse"
   - **Home**
-  - Home page and new windows - Select ✅ Custom Urls -> https://searx.be/ -> New Tabs -> Firefox Home (Default)
+  - Home page and new windows - Select ✅ Custom Urls -> https://www.startpage.com/ -> New Tabs -> Firefox Home (Default)
   - Recent activity - Turn ❌ everything
   - **Search**
-  - Default Search Engine - Select ✅ Searx Belgium (see how-to in 📁 [Search-engine](https://github.com/ivoarch/My-Apple-Privacy-Setup/blob/main/docs/Search-engine.md))
+  - Default Search Engine - Select ✅ StartPage
   - Search Suggestions - Turn ❌ everything
   - **Downloads**
   - ✅ Always ask you where to save files
@@ -296,6 +296,8 @@ sudo port -v install \
   - **🧩 Extensions**
   - [Bitwarden](https://addons.mozilla.org/es/firefox/addon/bitwarden-password-manager/)
   - [Ublock origin](https://ublockorigin.com/)
+  - [LibRedirect](https://addons.mozilla.org/en-US/firefox/addon/libredirect/)
+  - [StartPage](https://addons.mozilla.org/en-US/firefox/addon/startpage-private-search/)
 - **Iterm2**
   - Install from https://iterm2.com/
   - **ZSH**
