@@ -124,6 +124,7 @@ sudo port -v install \
 - [VLC](https://www.videolan.org/) - free and open source cross-platform multimedia player .
 - [Vorta](https://vorta.borgbase.com/) - is a backup client for macOS and Linux desktops .
 - [Tiddle desktop](https://github.com/TiddlyWiki/TiddlyDesktop) - special purpose web browser for working with locally stored TiddlyWikis .
+- [MacUpdater](https://www.corecode.io/macupdater/) - automatically track the latest updates of all applications installed on your Mac
 
 ## 🛡️ Security tools
 
@@ -137,6 +138,10 @@ sudo port -v install \
 - [ReiKey](https://objective-see.com/products/reikey.html) - Malware and other applications may install persistent keyboard "event taps" to intercept your keystrokes.
 - [KnockKnock](https://objective-see.com/products/knockknock.html) - See what's persistently installed on your Mac.
 - [Lulu](https://objective-see.com/products/lulu.html) - Open-source firewall.
+- [TaskExplorer](https://objective-see.org/products/taskexplorer.html) - Explore all the tasks (processes) running on your Mac with TaskExplorer.
+- [BlockBlock](https://objective-see.org/products/blockblock.html) - Monitors common persistence locations and alerts whenever a persistent component is added
+- [RansomWhere](https://objective-see.org/products/ransomwhere.html) - By continually monitoring the file-system for the creation of encrypted files by suspicious processes, RansomWhere? aims to protect your personal files, generically stopping ransomware in its tracks.
+- [What's Your Sign](https://objective-see.org/products/whatsyoursign.html) - Open-source firewall.
 
 ---
 
@@ -200,13 +205,15 @@ sudo port -v install \
   - Make sure only you want for sharing is enabled
 - **🛡️ Security and Privacy settings**
   - **General**
-  - Set Require Password to immediately
+  - Set ✅ Require Password to immediately
   - **FileVault**
   - ✅ "FileVault".
   - **Firewall**
   - ✅ "Firewall".
   - **Firewall Options**
-  - ✅ "Blcok all incoming connections".
+  - ✅ "Block all incoming connections".
+  - **Lockdown Mode**
+  - ✅ Turn ON
   - **Privacy**
   - **Location Services**
   - ✅ Only for "Find My"
@@ -331,7 +338,7 @@ sudo port -v install \
   - Wireguard settings > ✅ "Port Automatic", ✅ "Obfuscation set to Automatic" , "UDP over TCP port Automatic", ✅ "Enable multihop"
 - **Lulu Firewall**
   - **First start**
-  - ❌ "Allow Apple Programs".
+  - ✅ "Allow Apple Programs".
   - ❌ "Allow Already Installed Applications".
 - **Visual studio Code**
   - **🧩 Extensions**
