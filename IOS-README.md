@@ -172,6 +172,7 @@
 - ❌ "Improve Siri & Dictation".
 - **Security**
 - **Lockdown Mode**
+- ✅ Turn "ON"
 
 ---
 
