@@ -114,7 +114,6 @@ sudo port -v install \
 
 - [Appcleaner](https://freemacsoft.net/appcleaner/) - Application which allows you to thoroughly uninstall unwanted apps.
 - [Amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704?mt=12) - For keeping your Mac awake .
-- [Rectangle](https://rectangleapp.com) - Move and resize windows in macOS using keyboard shortcuts .
 - [Maccy](https://maccy.app) - Clipboard manager .
 - [Keka](https://www.keka.io/es/) - The macOS file archiver.
 - [Telegram](https://telegram.org) - Chat .
@@ -124,7 +123,6 @@ sudo port -v install \
 - [VLC](https://www.videolan.org/) - free and open source cross-platform multimedia player .
 - [Vorta](https://vorta.borgbase.com/) - is a backup client for macOS and Linux desktops .
 - [Tiddle desktop](https://github.com/TiddlyWiki/TiddlyDesktop) - special purpose web browser for working with locally stored TiddlyWikis .
-- [MacUpdater](https://www.corecode.io/macupdater/) - automatically track the latest updates of all applications installed on your Mac
 
 ## 🛡️ Security tools
 
@@ -132,7 +130,6 @@ sudo port -v install \
 - [Cryptomator](https://cryptomator.org) - Protect your data in the cloud .
 - [Internet Access Policy Viewer](https://obdev.at/products/iapviewer/index.html) - A better view on privacy.
 - [Mullvad](https://mullvad.net) - Open-source commercial VPN service based in Sweden.
-- [Secretive](https://github.com/maxgoedjen/secretive) - App for storing and managing SSH keys in the Secure Enclave .
 - [Veracrypt](https://www.veracrypt.fr/en/Home.html) - free open source disk encryption software.
 - [Micro Snitch](https://www.obdev.at/products/microsnitch/index.html) - Monitors a mac's mic and webcam .
 - [ReiKey](https://objective-see.com/products/reikey.html) - Malware and other applications may install persistent keyboard "event taps" to intercept your keystrokes.
