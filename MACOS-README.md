@@ -274,10 +274,10 @@ sudo port -v install \
   - **General**
   - Browsing - ❌ "Recommend extensions as you browse" also "Recommend features as you browse"
   - **Home**
-  - Home page and new windows - Select ✅ Custom Urls -> https://www.startpage.com/ -> New Tabs -> Firefox Home (Default)
+  - Home page and new windows - Select ✅ Custom Urls -> https://searx.be/ -> New Tabs -> Firefox Home (Default)
   - Recent activity - Turn ❌ everything
   - **Search**
-  - Default Search Engine - Select ✅ StartPage
+  - Default Search Engine - Select ✅ Searx Blegium
   - Search Suggestions - Turn ❌ everything
   - **Downloads**
   - ✅ Always ask you where to save files
